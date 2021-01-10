@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="generator" content="Hugo 0.79.1">
+      <link rel="preconnect" href="https://www.googletagmanager.com/">
+      <link crossorigin="" rel="preconnect" href="https://www.google-analytics.com/">
+      <meta charset="utf-8">
+      
+      <title>terry fu</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+     
+      <link rel="stylesheet" href="resources/aos.css">
+      <link href="resources/css2.css" rel="stylesheet">
+      
+      <!--css code-->
+      <style>
+        :root{
+        --light: #faf8f8;
+        --dark: #141021;
+        --navy: #1b3294;
+        --olive: #84a59d;
+        --salmon: #f28482;
+        --gray: #4e4e4e;
+        --lightgray: #747474;
+        --outlinegray: #dadada;
+        --lt-colours-light: var(--light) !important;
+        --lt-colours-lightgray: var(--lightgray) !important;
+        --lt-colours-dark: var(--navy) !important;
+        --lt-colours-secondary: var(--olive) !important;
+        --lt-colours-gray: var(--outlinegray) !important;
+        --invert-filter: invert(0) hue-rotate(0)
+        }
+        
+        html{
+          scroll-behavior:smooth
+        }
+        body{
+          margin:0;
+          height:100vh;
+          width:100vw;
+          overflow-x:hidden;
+          background-color:var(--light)
+        }
+        h1{
+          font-family:source sans pro;
+          font-size:4em;
+          color:var(--dark);
+          margin-bottom:0
+        }
+        h2{
+          font-family:source sans pro;
+          font-size:3em;
+          color:var(--dark)
+        }
+        h3{
+          font-family:roboto mono;
+          margin:0;font-size:1em;
+          color:var(--dark)
+        }
+        a{
+          color:var(--navy);
+          transition:all .2s ease
+        }
+        .jtext{
+           color:var(--olive)!important;
+        }
+        .ctext{
+           color:rgb(251, 4, 4)!important;
+        }
+        .csstext{
+           color:peru!important;
+        }
+        .htext{
+           color:rgba(230, 241, 131, 0.842)!important;
+        }
+        .jstext{
+           color:rgb(6, 218, 77)!important;
+        }
+        .ptext{
+           color:blueviolet!important;
+        }
+        ul{
+          font-family:source sans pro,sans-serif;
+          margin-top:0;
+          padding-left:1.5em
+        }
+        p,ul{
+          display:block;
+          color:var(--gray);
+          font-family:source sans pro,sans-serif;
+          font-size:1.1em;line-height:1.2}
+        .lt-card{
+          margin:0!important;
+          padding:0 0 0 1em!important
+        }
+        .hover{
+           color:var(--dark);
+           text-decoration:none;
+           opacity:.6;
+           z-index:1;
+           transition:300ms
+         }.hover::after{
+            transition:300ms;
+            height:18px;
+            content:"";
+            position:absolute;
+            background-color:var(--navy);
+            opacity:.5;
+            z-index:-1;
+            width:0%;
+            right:5px;
+            bottom:5px
+         }
+         #landing-container{
+            position:relative;
+            width:100vw;
+            height:100vh
+            
+         }
+         #landing-container>#landing-overlay{
+            position:absolute;
+            z-index:9999!important;
+            background-color:#faf8f8!important;
+            top:30%;height:60%
+         }@media all and (max-width:450px){
+            #landing-container>#landing-overlay{
+               overflow:hidden;
+               left:10vw!important;
+               padding:0
+            }
+         }#landing-container>canvas{
+            position:absolute;
+            width:100vw;
+            height:100vh
+         }#main-landing>h1{
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:.4s
+         }@media all and (max-width:450px)
+         {#main-landing>h1:nth-child(2){
+            margin-top:15vh
+         }}#main-landing>ul>li:nth-child(1){
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:1.3s
+         }#main-landing>ul>li:nth-child(2){
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:1.4s
+         }#main-landing>ul>li:nth-child(3){
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:1.5s
+            }#main-landing>ul>li:nth-child(4){
+               animation:fadeIn ease .6s;
+               opacity:0;
+               animation-fill-mode:forwards;
+               animation-delay:1.6s
+            }@keyframes fadeIn{
+               0%{opacity:0}100%{opacity:1}
+            }#sub-nav{
+               list-style:none;
+               padding-left:0;
+               margin:0
+            }#sub-nav>li{
+               display:inline-block;
+               font-family:roboto mono,monospace;
+               font-size:1em;
+               padding-top:.5em;
+               font-weight:400;
+               color:var(--dark)
+            }#sub-nav>li>a{
+               padding-right:.5em
+            }.col1{
+               color:var(--dark)
+            }.col2{
+               color:var(--navy)
+            }.col3{
+               color:var(--olive)
+            }.col4{
+               color:var(--salmon)
+            }.rotating-text{
+               overflow:hidden;
+               animation:fadeIn ease .6s;
+               opacity:0;
+               animation-fill-mode:forwards;
+               animation-delay:.8s
+            }@media all and (max-width:450px){
+            .rotating-text{
+               height:2em
+               }
+            }.rotating-text>h1{
+               display:inline-flex;
+               margin:0;
+               vertical-align:top
+            }.rotating-text>h1>.word{
+               position:absolute;
+               display:flex;
+               opacity:0;
+               overflow:hidden;
+               padding-bottom:.12em
+            }.rotating-text>h1>.word>.letter{
+               transform-origin:center center .8em
+            }.rotating-text>h1>.word>.letter.out{
+               transform:rotateX(90deg);
+               transition:.32s cubic-bezier(0.6,0,0.7,0.2)
+            }.rotating-text>h1>.word>.letter.in{
+               transition:.32s ease
+            }.rotating-text>h1>.word>.letter.behind{
+               transform:rotateX(-90deg)
+            }.ext-ref{
+               display:block;
+               margin-left:1.5em;
+               font-weight:700;
+               font-family:roboto mono
+            }ul.lt-hl{
+               font-family:source sans pro;
+               margin-bottom:1em
+            }#contact_buttons a{
+               font-family:roboto mono;
+               font-weight:700;
+               font-size:1em;
+               color:var(--navy);
+               padding:0 .5em 3em
+            }.img-container{
+               position:relative;
+               margin-top:2em;
+               margin-left:3em;
+               min-height:256px
+            }@media all and (max-width:450px){
+               .img-container{
+                  margin-left:0
+               }
+            }.img-container>.me{
+               filter:grayscale(40%);
+               max-height:256px;
+               max-width:100%;
+               border-radius:5px;
+               position:absolute;
+               left:0;top:0
+            }.img-container>.deco{
+               background-color:var(--olive);
+               -webkit-mask:url(res/deco.svg)no-repeat center;
+               mask:url(res/deco.svg)no-repeat center;
+               -webkit-mask-size:contain;
+               mask-size:contain;
+               position:absolute;
+               z-index:3;width:300px;
+               height:200px;
+               top:-50px;
+               left:180px
+            }@media all and (max-width:450px){
+               .img-container>.deco{
+                  width:210px;
+                  height:150px;
+                  left:140px
+               }
+            }.img-container>div>.highlight{
+               z-index:5;
+               position:absolute;
+               top:210px;
+               left:50px
+            }@media all and (max-width:450px){
+               .img-container>div>.highlight{
+                  left:0;width:100%;top:220px
+               }.img-container>div>.highlight code{
+                  font-size:.6em!important
+               }
+            }.img-container>div>.highlight>div{
+               padding:.2em 1em;border-radius:4px
+            }.img-container>div>.highlight code{
+               font-family:Roboto Mono;font-size:.8em
+            }#about:hover .me,#about:hover .deco,#about:hover .highlight-container{
+               filter:grayscale(0%)
+            }#about p:first-of-type{
+               margin-top:0
+            }body[data-aos-easing=custom] [data-aos],[data-aos][data-aos][data-aos-easing=custom]{
+               transition-timing-function:cubic-bezier(0.25,0.8,0.25,1)
+            }.gh-chart{
+               filter:var(--invert-filter);
+               width:100%;
+               margin-bottom:2em
+            }
+      </style>
+      
+      <style>
+         .lt-content-column:hover h2 .hover{
+            opacity:1
+         }
+         .lt-content-column:hover h2 .hover::after{
+            width:100%
+         }
+         .lt-content-column:hover .side-header::before{
+         width:180px
+         }.side-header-container{
+         margin-top:2em
+         }.side-header{
+         color:var(--navy);
+         position:absolute;
+         opacity:.3;
+         font-size:.8em;
+         transition:opacity 2s cubic-bezier(0.25,0.8,0.25,1);
+         transform-origin:top left;
+         transform:translateX(-2em)rotateZ(90deg)rotateZ(180deg)translateX(-100%)
+         }
+         .side-header::before{
+         height:100%;
+         position:absolute;
+         width:0;
+         /*display:inline-block;*/
+         transform:translateY(-0.5em);
+         color:var(--gray);
+         transition:all .6s cubic-bezier(0.25,0.8,0.25,1);
+         transition-delay:.3s;
+         content:'';
+         right:calc(100% + 0.5em)
+         }
+      </style>
+      
+      <style>
+         .lt-card{
+            padding:.25em 1em;
+            margin:.5em 0;
+            border-radius:5px;
+            background-color:var(--lt-colours-light);
+            border:1px solid var(--lt-colours-gray)
+         }.lt-hover{
+            transition:all .5s cubic-bezier(0.25,0.8,0.25,1)
+         }.lt-hover:hover{
+            box-shadow:0 14px 28px rgba(27,33,48,.18),0 10px 10px rgba(27,33,48,.16)!important
+         }.lt-shadow{
+            box-shadow:0 14px 28px rgba(27,33,48,.06),0 10px 10px rgba(27,33,48,.02)
+         }ul.lt-hl{
+            list-style:none;
+            padding:0
+         }ul.lt-hl>li{
+            display:inline-block;
+            border-style:none;
+            font-size:.9em;
+            margin-right:3px;
+            padding:.3rem;
+            border-radius:2px;
+            color:var(--lt-colours-light);
+            background-color:var(--lt-colours-secondary);
+            margin-bottom:.2em
+         }.lt-flex-col{
+            display:flex;
+            flex-direction:column
+         }.lt-flex-row{
+            display:flex;
+            flex-direction:row
+         }.lt-content-column{
+            padding:20px 20vw
+         }.lt-centre{
+            text-align:center
+         }.lt-flex-50{
+            flex:0 0 50%
+         }.lt-flex-25{
+            flex:0 0 25%
+         }.lt-flex-33{
+            flex:0 0 33%
+         }.lt-flex-66{
+            flex:0 0 66%
+         }.lt-flex-centre{
+            justify-content:center
+         }
+      </style>
+      
+      
+      <style>
+         @media screen and (max-width:1440px){
+            .short-desc{
+               display:None
+            }#bio .lt-flex-row{
+               flex-direction:column!important
+               }
+            }
+      </style>
+      
+      <style>
+         ul.project_list{
+            padding:0
+         }.accordion{
+            margin:1rem 0;
+            padding:0;
+            list-style:none
+         }.accordion .accordion-arrow{
+            float:right;
+            height:7px;
+            min-width:7px;
+            margin-right:1rem;
+            margin-left:auto;
+            vertical-align:middle;
+            border-right:2px solid;
+            border-bottom:2px solid;
+            border-color:var(--dark);
+            transform:rotate(45deg)translateY(0.25em);
+            transition:transform .2s ease-in-out
+         }.accordion .accordion_body.is-active .accordion-arrow{
+            transform:rotateX(180deg)rotateZ(45deg)translateY(-3.5px)translateX(-7px)
+         }.accordion .accordion_body{
+            width:100%;
+            padding:1.3em .5em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body{
+               padding:.8em!important
+            }
+         }.accordion .accordion_body>.accordion-panel{
+            display:none
+         }.accordion .accordion_body>.accordion-panel ul.lt-hl{
+            margin:0
+         }.accordion .accordion_body>.proj_desc>.accordion-arrow{
+            margin-left:.5em
+         }.accordion .accordion_body>.proj_desc>a{
+            font-family:roboto mono;
+            font-weight:700;
+            font-size:.9em;
+            /*color:var(--navy);*/
+            padding-right:1em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.proj_desc>a{
+               padding-right:.5em!important;
+               font-size:.7em!important;
+               transform:translateY(0.15em)
+            }
+         }.accordion .accordion_body>.proj_desc>.project-title{
+            white-space:nowrap;
+            font-family:source sans pro;
+            font-weight:600;padding-right:.3em
+         }.accordion .accordion_body>.proj_desc>.short-desc{
+            width:auto!important;
+            white-space:nowrap;
+            margin:0
+         }.accordion .accordion_body>.proj_desc>.spacer{
+            flex:25%
+         }.accordion .accordion_body>.job-info>.company-logo{
+            width:40px;
+            height:40px;
+            border-radius:3px;
+            margin-right:1em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info>.company-logo{
+               width:30px!important;
+               height:30px!important
+            }
+         }.accordion .accordion_body>.job-info>.accordion-arrow{
+            margin-top:1em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info>.accordion-arrow{
+               margin-top:.5em
+            }
+         }.accordion .accordion_body>.job-info h2{
+            font-weight:600;
+            font-size:1.2em;
+            font-family:source sans pro;
+            margin:0
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info h2{
+               font-size:1em;
+               transform:translateY(0.2em)
+            }
+         }.accordion .accordion_body>.job-info p{
+            font-weight:400;
+            color:var(--gray);
+            font-size:.9em;
+            font-family:roboto mono;
+            margin:0
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info p{
+               display:none
+            }
+         }
+      </style>
+      
+      <style>
+         .mobile-only{
+            display:None
+         }@media all and (max-width:450px){
+            .mobile-only{
+               display:inline-block!important
+            }h1{
+               font-size:2em!important
+            }h3{
+               font-size:1em!important
+            }p{
+               font-size:1em!important
+            }.mobile-hide{
+               display:None!important
+            }#about,#experience,#projects{
+               padding:0 5vw 30px!important
+            }
+         }
+      </style>
+     
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171496236-1"></script>
+
+  </head>
+   
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+      
+    <!--intro-->
+    <div id="landing-container">
+         <div id="landing-overlay" class="lt-content-column" >
+            <div> 
+               <div id="main-landing">
+ 
+                  <div class="rotating-text">
+                     <h1>Hi! I’m Terry<a>.</a></h1>
+                     <h1 class="mobile-hide"><span class="word col1"></span></h1>
+                  </div>
+                  <ul id="sub-nav">
+                     <li><a style="text-decoration:none" href="#about"><strong>| <em> about</em></strong></a></li>
+                     <li><a style="text-decoration:none" href="#experience"><strong>| <em> experience</em></strong></a></li>
+                     <li><a style="text-decoration:none" href="#projects"><strong>| <em> projects</em></strong></a></li>
+                     <li><a style="text-decoration:none" href ="photography.html"><strong>| <em> photography</em></strong></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <canvas id="canvas" width="2295" height="1505"></canvas>
+    </div>
+
+    <!--about-->
+    <div class="lt-content-column" id="about">
+         <div id="bio" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100" class="aos-init">
+            <h2 class="side-header-container"><span class="hover side-header">about me</span></h2>
+            <div class="lt-flex-row">
+               <div class="lt-flex-50 aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <p>I am currently studying Computer Science and Actuarial Science at the University of Calgary. 
+                     Being an active member of the Competitive
+                     Programming Club at the Univeristy, I love to code away my problems.
+                  </p>
+                  <p>In my spare time, you can find me gaming with friends, exploring new tech, 
+                     or tinkering about with custom keyboards! 
+                  </p>
+                  <ul id="sub-nav">
+                     <li><a href ="https://github.com/terryfu33"><strong><em>github</em></strong></a></li>
+                     <li><a href =" https://www.facebook.com/fu.terry33/"><strong><em>facebook</em></strong></a></li>
+                     <li><a href ="https://www.instagram.com/_terryfu/"><strong><em>instagram</em></strong></a></li>
+                     <li><a href ="https://vsco.co/terr3124/gallery"><strong><em>vsco</em></strong></a></li>
+                     <li><a href ="terryFuResume.pdf"><strong><em>resume</em></strong></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+    </div>
+
+    <!--work-->
+    <div class="lt-content-column aos-init" id="experience" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+         <h2 class="side-header-container"><span class="hover side-header">experience</span></h2>
+         <div id="expcards">
+            <!--Current-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                  <div class="accordion_body">
+                     <div class="lt-flex-row job-info">
+                        <div>
+                           <h2 class="job_name">Current</h2>
+                           <p class="job_title"></p>
+                           <div class="spacer"></div>
+                           <a></a>
+                        </div>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>Currently searching for interships for summer 2021!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Python Tutor-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+              <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                 <div class="accordion_body">
+                    <div class="lt-flex-row job-info">
+                       <div>
+                          <h2 class="job_name">C&C Educenter - Tutor/Teaching Assistant</h2>
+                          <h2 class="job_name ptext">Python</h2>
+                          <div class="spacer"></div>
+                          <a>2019-2020</a>
+                       </div>
+                       
+                       <div class="accordion-arrow"></div>
+                    </div>
+                    <div class="accordion-panel">
+                       <p>helped teach a class of high schoolers in Python, going as advanced as recursion. helped
+                        develop weekly lessons plans, and solutions to given problems.
+                        one on one tutored a student in Scratch and later Python
+                       </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+         </div>
+    </div>
+      
+    <!--projects-->
+    <div id="projects" class="lt-content-column aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+         <h2 class="side-header-container"><span class="hover side-header">projects</span></h2>
+         <div class="project_list">
+          <!--Current Project-->
+          <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">my current project</h3>
+                        <p class="short-desc">— a actuarial calculator</p>
+                        <div class="spacer"></div>
+                        <a>tba</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>my current project
+                           is working on a actuarial calculator, as i struggled with increasing amounts of random formulas that i needed to have, and big equations. 
+                           having a central location with such formulas and an automated calculator could greatly increase the productivity of working on assignments and studying.
+                           I am also currently working on improvements to my website.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--BomberMan-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">bomberman</h3>
+                        <p class="short-desc">— a simple command line game</p>
+                        <div class="spacer"></div>
+                        <a class= "ctext">C</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>bomberman
+                           is a simple command line game. A 2d array of random floats (between -15,15) and prints a covered board
+                           to the user. The user is then asked to make a turn by giving coordinates to the terminal. The game ends when the player
+                           runs out of bombs, or have 0 lives and a negative score at the same time. 
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Website-->
+            <div class="accordion">
+              <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                 <div class="accordion_body">
+                    <div class="proj_desc lt-flex-row">
+                       <h3 class="project-title">personal website</h3>
+                       <p class="short-desc"> was made</p>
+                       <div class="spacer"></div>
+                       <a class = "htext">Html</a><a class = "csstext">CSS</a><a class = "jstext">Js</a>
+                       <div class="accordion-arrow"></div>
+                    </div>
+                    <div class="accordion-panel">
+                       <p>I was struggling to keep organized with my links, and projects so I decided to create a page where I could keep all my
+                         information in an easily accesiable page, as well as showcasing my knowledge in coding. Also,learning wed design, Html, CSS and JavaScript
+                         was a great addition.
+                       </p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+            <!--Space Tanks in Space-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">space tanks in space</h3>
+                        <p class="short-desc">— a 2d game</p>
+                        <div class="spacer"></div>
+                        <a class ="jtext">Java</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>space tanks in space
+                           is a fairly 2d game where a user controls the player tank and attempts to destroy randomly generated enemies. the game also
+                           uses procedural generation for the maps.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Dungeon Crawler-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">dungeon crawler</h3>
+                        <p class="short-desc">a simply java game</p>
+                        <div class="spacer"></div>
+                        <a class ="jtext"> Java </a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>dungeon crawler
+                           this project was a simple 2d game where a player is faced with endless, randomly generated waves of enemies. An added feature 
+                           of a shop avaliable every few rounds allowed for more gameplay, with boss fights happeneing every few rounds.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            
+         </div>
+    </div>
+      
+    <!--ending-->
+    <div id="contact_buttons" class="lt-centre aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+    
+         <a href="#landing-container">top</a>
+         <br></br><br></br><br></br>
+    </div>
+     
+    <script src="resources/jquery.js"></script>
+    
+    <script>
+       
+        function random(low,high){
+          return Math.random()*(high-low)+low
+        }
+        class Visual{
+          constructor(particles,yVariance,maxParticleRadius){
+            this.canvas=document.querySelector('#canvas')
+            this.context=this.canvas.getContext('2d')
+            this.canvasWidth=0
+            this.canvasHeight=0
+            this.particleLength=particles
+            this.yVariance=yVariance
+            this.particles=[]
+            this.particleMaxRadius=maxParticleRadius
+            this.handleResizeBind=this.resize.bind(this)
+            this.initialize()
+            this.render()
+          }
+          initialize(){
+            this.resizeCanvas()
+            for(let i=0;i<this.particleLength;i++){
+              this.particles.push(this.createParticle(i))
+            }
+            this.bind()
+          }
+          bind(){
+            window.addEventListener('resize',this.handleResizeBind,false)
+          }
+          unbind(){
+            window.removeEventListener('resize',this.handleResizeBind,false)
+          }
+          resize(){
+            this.particles=[]
+            this.unbind()
+            this.initialize()
+          }
+          resizeCanvas(){
+            this.canvasWidth=document.body.offsetWidth
+            this.canvasHeight=document.body.offsetHeight
+            this.canvas.width=this.canvasWidth*window.devicePixelRatio
+            this.canvas.height=this.canvasHeight*window.devicePixelRatio
+            this.context=this.canvas.getContext('2d')
+            this.context.scale(window.devicePixelRatio,window.devicePixelRatio)
+          }
+          randomColour(){
+            switch(Math.floor(Math.random()*3)){
+              case 0:return[0,0,0]
+              case 1:return[0,0,0]
+              case 2:return[0,0,0]
+            }
+          }
+          createParticle(id,isRecreate){
+            const radius=random(2,this.particleMaxRadius)
+            const x=isRecreate?-radius:random(0,this.canvasWidth)
+            let y=random(this.canvasHeight/2-this.yVariance,this.canvasHeight/2+this.yVariance)
+            y+=random(-this.yVariance/2,this.yVariance/2)
+            const alpha=random(0.05,0.5)
+            const col=this.randomColour()
+            return{
+              id:id,x:x,y:y,startY:y,radius:radius,startAngle:0,endAngle:Math.PI*2,alpha:alpha,color:{r:col[0],g:col[1],b:col[2]},speed:alpha,amplitude:random(50,250)
+            }
+          }
+          drawParticles(){ 
+            this.particles.forEach(particle=>{
+              this.moveParticle(particle)
+              this.context.beginPath()
+              this.context.fillStyle=`rgba(${particle.color.r}, ${particle.color.g}, ${particle.color.b}, ${particle.alpha})`
+              this.context.arc(particle.x,particle.y,particle.radius,particle.startAngle,particle.endAngle)
+              this.context.fill()
+            })
+          }
+          moveParticle(particle){
+            particle.x+=particle.speed
+            particle.y=particle.startY+particle.amplitude*Math.sin((particle.x*Math.PI)/(360*2))
+          }
+          render(){
+            this.context.clearRect(0,0,this.canvasWidth+this.particleMaxRadius*2,this.canvasHeight)
+            var style=getComputedStyle(document.body)
+            this.context.fillStyle=style.getPropertyValue('--light')
+            this.context.fillRect(0,0,canvas.width,canvas.height)
+            /*this.drawParticles()*/
+            this.particles.forEach(particle=>{
+              if(particle.x-particle.radius>=this.canvasWidth){
+                this.particles[particle.id]=this.createParticle(particle.id,true)
+              }
+            })
+          
+            requestAnimationFrame(this.render.bind(this))
+          }
+        }
+          new Visual(150,150,8)
+          const words=document.querySelectorAll(".word")
+          words.forEach(word=>{const letters=word.textContent.split("")
+          word.textContent=""
+          letters.forEach(letter=>{const span=document.createElement("span")
+          if(letter==" "){span.textContent=" "}else{span.textContent=letter}
+          span.className="letter"
+          word.append(span)})})
+          var currentWordIndex=0
+          var maxWordIndex=words.length
+          words[currentWordIndex].style.opacity="1"
+          var rotateText=()=>{const currentWord=words[currentWordIndex]
+          const nextWord=words[(currentWordIndex+1)%maxWordIndex]
+          Array.from(currentWord.children).forEach((letter,i)=>{setTimeout(()=>{letter.className="letter out"},i*40)})
+          nextWord.style.opacity="1";Array.from(nextWord.children).forEach((letter,i)=>{letter.className="letter behind";setTimeout(()=>{letter.className="letter in";},500+i*20);})
+          currentWordIndex=(currentWordIndex+1)%maxWordIndex}
+          const init=()=>{rotateText()
+          setInterval(rotateText,3000)}
+          setTimeout(init,2000)
+          $(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown()
+          $(".accordion > .accordion-item > .accordion_body").click(function(){$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing")})
+    </script>
+    
+    <script>const toggleSwitch=document.querySelector('#darkmode-toggle')
+         const currentTheme=localStorage.getItem('theme')?localStorage.getItem('theme'):null
+         if(currentTheme){document.documentElement.setAttribute('saved-theme',currentTheme);if(currentTheme==='dark'){toggleSwitch.checked=true}}
+         const switchTheme=(e)=>{if(e.target.checked){document.documentElement.setAttribute('saved-theme','dark')
+         localStorage.setItem('theme','dark')}
+         else{document.documentElement.setAttribute('saved-theme','light')
+         localStorage.setItem('theme','light')}}
+         toggleSwitch.addEventListener('change',switchTheme,false)
+    </script><script src="resources/aos.js"></script><script>AOS.init();</script>
+   
+  </body>
+</html>
