@@ -1,5 +1,5 @@
 # Personal Website
-to showcase projects and list links
+to showcase projects and links
 
 inspired by Johnson Su and Jacky Zhao
 
