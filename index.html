@@ -587,16 +587,41 @@
                   </div>
                </div>
             </div>
+            <!-- ExPandable-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                  <img class="company-logo" src="images/expandable.jpg" style="width:60px;height:60px;vertical-align:middle">
+                  <div class="accordion_body">
+                     <div class="lt-flex-row job-info">
+                        <div>
+                           <h2 class="job_name">ExPandable Esports - Front-End Developer </h2>                         
+                           <a>2021 - Current</a>
+                        </div>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>Worked on and developed www.expandable-esports.com
+                        </p>
+                        <ul class="lt-hl">
+                           <li>Html5</li>
+                           <li>CSS3</li>
+                           <li>JavaScript</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <!--Python Tutor-->
             <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+               <img class="company-logo" src="images/candc.jpeg" style="width:60px;height:60px;vertical-align:middle">
                  <div class="accordion_body">
                     <div class="lt-flex-row job-info">
                        <div>
-                          <h2 class="job_name">C&C Educenter - Tutor/Teaching Assistant</h2>
-                          <h2 class="job_name ptext">Python</h2>
+                          <h2 class="job_name">C&C Educenter - Tutor/Teaching Assistant </h2>
+                          <a> 2019 - 2020</a>
                           <div class="spacer"></div>
-                          <a>2019-2020</a>
+                          
                        </div>
                        
                        <div class="accordion-arrow"></div>
@@ -606,6 +631,9 @@
                         develop weekly lessons plans, and solutions to given problems.
                         one on one tutored a student in Scratch and later Python
                        </p>
+                       <ul class="lt-hl">
+                           <li>Python</li>
+                        </ul>
                     </div>
                   </div>
               </div>
@@ -897,7 +925,7 @@
             var style=getComputedStyle(document.body)
             this.context.fillStyle=style.getPropertyValue('--light')
             this.context.fillRect(0,0,canvas.width,canvas.height)
-            /*this.drawParticles()*/
+            //this.drawParticles()//
             this.particles.forEach(particle=>{
               if(particle.x-particle.radius>=this.canvasWidth){
                 this.particles[particle.id]=this.createParticle(particle.id,true)
