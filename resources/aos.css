@@ -982,21 +982,21 @@ body[data-aos-easing=ease-in-out-back] [data-aos] {
   }
   .bar::before{
 	content:  attr(data-skill);
-	background-color: #f3b0ff;
+	background-color: #3437f1;
 	display: inline-block;
 	padding: 5px 0 5px 10px;
 	border-radius: inherit;
-	animation: load 10s 0s;
-	-webkit-animation: load 10s 0s;
-	-moz-animation: load 10s 0s;
-	-o-animation: load 10s 0s;
+	animation: load 3s 0s;
+	-webkit-animation: load 3s 0s;
+	-moz-animation: load 3s 0s;
+	-o-animation: load 3s 0s;
   }
   
   .bar.front::before{
-	background-color: #ffcc33;
+	background-color: #4133ff;
   }
   .bar.back::before{
-	background-color: #a6cfe3;
+	background-color: #4447f8;
   }
   
   .bar.learning::before{
@@ -1012,7 +1012,7 @@ body[data-aos-easing=ease-in-out-back] [data-aos] {
 	width: calc(80% - 10px);
   }
   .bar.expert::before{
-	width: calc(90% - 10px);
+	width: calc(95% - 10px);
   }
   
 [data-aos][data-aos][data-aos-easing=ease-in-sine],
