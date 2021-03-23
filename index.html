@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
       <meta name="generator" content="Hugo 0.79.1">
       <link rel="preconnect" href="https://www.googletagmanager.com/">
       <link crossorigin="" rel="preconnect" href="https://www.google-analytics.com/">
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQBCLDYG0E"></script>
-       <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
- 
-       gtag('config', 'G-VQBCLDYG0E');
-       </script>
       <meta charset="utf-8">
-      <meta name="description" content="">
+      
       <title>terry fu</title>
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      <link rel="shortcut icon" href="res/favicon.ico" sizes="256x256">
-      <link rel="stylesheet" href="res/aos.css">
-      <link href="res/css2.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="shortcut icon" href="resources/favicon.ico" sizes="256x256">
 
-      <style>:root {
-        --light: #fff0e4 ;
+     
+      <link rel="stylesheet" href="resources/aos.css">
+      <link href="resources/css2.css" rel="stylesheet">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQBCLDYG0E"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VQBCLDYG0E');
+      </script>
+      <!--css code-->
+      <style>
+        :root{
+        --light: #f8fafa;
         --dark: #141021;
-        --navy: #284b63;
-        --olive: #75a1bf;
+        --navy: #1b3294;
+        --olive: #84a59d;
         --salmon: #f28482;
         --gray: #4e4e4e;
         --lightgray: #747474;
@@ -38,1497 +40,1216 @@
         --lt-colours-secondary: var(--olive) !important;
         --lt-colours-gray: var(--outlinegray) !important;
         --invert-filter: invert(0) hue-rotate(0)
-      }
-      
-      [saved-theme=dark] {
-        --light: #0A192F !important;
-        --dark: #fbfffe !important;
-        --navy: #75a1bf !important;
-        --olive: #66FCF1 !important;
-        --salmon: #f58382 !important;
-        --gray: #c4c4c4 !important;
-        --lightgray: #292633 !important;
-        --outlinegray: #343434 !important;
-        --invert-filter: invert(97%) hue-rotate(195deg) grayscale(0.4) !important
-      }
-      
-      html {
-        scroll-behavior: smooth
-      }
-      
-      body {
-        margin: 0;
-        height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
-        background-color: var(--light)
-      }
-      
-      h1 {
-        font-family: source sans pro;
-        font-size: 4em;
-        color: var(--dark);
-        margin-bottom: 0
-      }
-      
-      h2 {
-        font-family: source sans pro;
-        font-size: 3em;
-        color: var(--dark)
-      }
-      
-      h3 {
-        font-family: roboto mono;
-        margin: 0;
-        font-size: 1em;
-        color: var(--dark)
-      }
-      
-      a {
-        color: var(--olive) !important;
-        transition: all .2s ease
-      }
-      
-      ul {
-        font-family: source sans pro, sans-serif;
-        margin-top: 0;
-        padding-left: 1.5em
-      }
-      
-      p,
-      ul {
-        display: block;
-        color: var(--gray);
-        font-family: source sans pro, sans-serif;
-        font-size: 1.1em;
-        line-height: 1.2
-      }
-      .bar{
-         background-color: #EEE;
-         padding: 2px;
-         border-radius: 15px;
-         margin-bottom: 5px;
-         font-size: 14px;
-         color: #FFF;
-         font-weight: bold;
+        }
         
-      }
-      .bar::before{
-         content:  attr(data-skill);
-         background-color: var(--olive);
-         display: inline-block;
-         padding: 5px 0 5px 10px;
-         border-radius: inherit;
-         animation: load 3s 0s;
-         -webkit-animation: load 3s 0s;
-         -moz-animation: load 3s 0s;
-         -o-animation: load 3s 0s;
-      }
-      
-      .bar.front::before{
-         background-color: var(--olive);
-      }
-      .bar.back::before{
-         background-color: var(--olive);
-      }
-      .jtext{
-           color: rgb(251, 165, 4)!important;
+        html{
+          scroll-behavior:smooth
+        }
+        body{
+          margin:0;
+          height:100vh;
+          width:100vw;
+          overflow-x:hidden;
+          background-color:var(--light)
+        }
+        h1{
+          font-family:source sans pro;
+          font-size:4em;
+          color:var(--dark);
+          margin-bottom:0;
+          
+        }
+        h2{
+          font-family:source sans pro;
+          font-size:3em;
+          color:var(--dark)
+        }
+        h3{
+          font-family:roboto mono;
+          margin:0;font-size:1em;
+          color:var(--dark)
+        }
+        a{
+          color:var(--navy);
+          transition:all .2s ease
+        }
+        .jtext{
+           color:var(--olive)!important;
         }
         .ctext{
-           color:rgb(173, 4, 251)!important;
+           color:rgb(251, 4, 4)!important;
         }
         .csstext{
            color:rgb(63, 172, 205)!important;
         }
         .htext{
-           color:rgba(255, 1, 1, 0.842)!important;
+           color:rgba(216, 164, 23, 0.842)!important;
         }
         .jstext{
-           color:rgb(198, 206, 95)!important;
+           color:rgb(169, 172, 8)!important;
         }
         .ptext{
-           color:rgb(45, 247, 9)!important;
+           color:blueviolet!important;
         }
-      .lt-card {
-        margin: 0!important;
-        padding: 0 0 0 1em!important
-      }
-      
-      .hover {
-        color: var(--dark);
-        text-decoration: none;
-        opacity: .6;
-        z-index: 1;
-        transition: 300ms
-      }
-      
-      .hover::after {
-        transition: 300ms;
-        height: 18px;
-        content: "";
-        position: absolute;
-        background-color: var(--olive);
-        opacity: .5;
-        z-index: -1;
-        width: 0%;
-        right: 5px;
-        bottom: 5px
-      }
-      
-      #landing-container {
-        position: relative;
-        width: 100vw;
-        height: 100vh
-      }
-      
-      #landing-container>#landing-overlay {
-        position: absolute;
-        z-index: 9999!important;
-        background-color: #0000!important;
-        top: 30%;
-        height: 60%
-      }
-      
-      @media all and (max-width:450px) {
-        #landing-container>#landing-overlay {
-          overflow: hidden;
-          left: 10vw!important;
-          padding: 0
+        ul{
+          font-family:source sans pro,sans-serif;
+          margin-top:0;
+          padding-left:1.5em
         }
-      }
-      
-      #landing-container>canvas {
-        position: absolute;
-        width: 100vw;
-        height: 100vh
-      }
-      
-      #main-landing>h1 {
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: .4s
-      }
-      
-      @media all and (max-width:450px) {
-        #main-landing>h1:nth-child(2) {
-          margin-top: 15vh
+        p,ul{
+          display:block;
+          color:var(--gray);
+          font-family:source sans pro,sans-serif;
+          font-size:1.1em;line-height:1.2}
+        .lt-card{
+          margin:0!important;
+          padding:0 0 0 1em!important
         }
-      }
-      
-      #main-landing>ul>li:nth-child(1) {
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: 1.3s
-      }
-      
-      #main-landing>ul>li:nth-child(2) {
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: 1.4s
-      }
-      
-      #main-landing>ul>li:nth-child(3) {
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: 1.5s
-      }
-      
-      #main-landing>ul>li:nth-child(4) {
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: 1.6s
-      }
-      
-      @keyframes fadeIn {
-        0% {
-          opacity: 0
-        }
-        100% {
-          opacity: 1
-        }
-      }
-      
-      #sub-nav {
-        list-style: none;
-        padding-left: 0;
-        margin: 0
-      }
-      
-      #sub-nav>li {
-        display: inline-block;
-        font-family: roboto mono, monospace;
-        font-size: 1em;
-        padding-top: .5em;
-        font-weight: 400;
-        color: var(--dark)
-      }
-      
-      #sub-nav>li>a {
-        padding-right: .5em
-      }
-      
-      .col1 {
-        color: var(--dark)
-      }
-      
-      .col2 {
-        color: var(--navy)
-      }
-      
-      .col3 {
-        color: var(--olive)
-      }
-      
-      .col4 {
-        color: var(--salmon)
-      }
-      
-      .rotating-text {
-        overflow: hidden;
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: .8s
-      }
-      
-      @media all and (max-width:450px) {
-        .rotating-text {
-          height: 2em
-        }
-      }
-      
-      .rotating-text>h1 {
-        display: inline-flex;
-        margin: 0;
-        vertical-align: top
-      }
-      
-      .rotating-text>h1>.word {
-        position: absolute;
-        display: flex;
-        opacity: 0;
-        overflow: hidden;
-        padding-bottom: .12em
-      }
-      
-      .rotating-text>h1>.word>.letter {
-        transform-origin: center center .8em
-      }
-      
-      .rotating-text>h1>.word>.letter.out {
-        transform: rotateX(90deg);
-        transition: .32s cubic-bezier(0.6, 0, 0.7, 0.2)
-      }
-      
-      .rotating-text>h1>.word>.letter.in {
-        transition: .32s ease
-      }
-      
-      .rotating-text>h1>.word>.letter.behind {
-        transform: rotateX(-90deg)
-      }
-      
-      .ext-ref {
-        display: block;
-        margin-left: 1.5em;
-        font-weight: 700;
-        font-family: roboto mono
-      }
-      
-      ul.lt-hl {
-        font-family: source sans pro;
-        margin-bottom: 1em
-      }
-      
-      #contact_buttons {
-        margin-top: 4em
-      }
-      
-      #contact_buttons>a {
-        font-family: roboto mono;
-        font-weight: 700;
-        font-size: 1em;
-        color: var(--navy);
-        padding: 0 .5em 3em
-      }
-      
-      .img-container {
-        position: relative;
-        margin-top: 2em;
-        margin-left: 3em;
-        min-height: 256px
-      }
-      
-      @media all and (max-width:450px) {
-        .img-container {
-          margin-left: 0
-        }
-      }
-      
-      .img-container>.me {
-        filter: grayscale(40%);
-        max-height: 256px;
-        max-width: 100%;
-        border-radius: 5px;
-        position: absolute;
-        left: 0;
-        top: 0
-      }
-      
-      .img-container>.deco {
-        background-color: var(--olive);
-        -webkit-mask: url(res/deco.svg)no-repeat center;
-        mask: url(res/deco.svg)no-repeat center;
-        -webkit-mask-size: contain;
-        mask-size: contain;
-        position: absolute;
-        z-index: 3;
-        width: 300px;
-        height: 200px;
-        top: -50px;
-        left: 180px
-      }
-      
-      @media all and (max-width:450px) {
-        .img-container>.deco {
-          width: 210px;
-          height: 150px;
-          left: 140px
-        }
-      }
-      
-      .img-container>div>.highlight {
-        z-index: 5;
-        position: absolute;
-        top: 210px;
-        left: 50px
-      }
-      
-      @media all and (max-width:450px) {
-        .img-container>div>.highlight {
-          left: 0;
-          width: 100%;
-          top: 220px
-        }
-        .img-container>div>.highlight code {
-          font-size: .6em!important
-        }
-      }
-      
-      .img-container>div>.highlight>div {
-        padding: .2em 1em;
-        border-radius: 4px
-      }
-      
-      .img-container>div>.highlight code {
-        font-family: Roboto Mono;
-        font-size: .8em
-      }
-      
-      #about:hover .me,
-      #about:hover .deco,
-      #about:hover .highlight-container {
-        filter: grayscale(0%)
-      }
-      
-      #about p:first-of-type {
-        margin-top: 0
-      }
-      
-      body[data-aos-easing=custom] [data-aos],
-      [data-aos][data-aos][data-aos-easing=custom] {
-        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1)
-      }
-      
-      .gh-chart {
-        filter: var(--invert-filter);
-        width: 100%;
-        margin-bottom: 2em
-      }
-      
+        .hover{
+           color:var(--dark);
+           text-decoration:none;
+           opacity:.6;
+           z-index:1;
+           transition:300ms
+         }.hover::after{
+            transition:300ms;
+            height:18px;
+            content:"";
+            position:absolute;
+            background-color:var(--navy);
+            opacity:.5;
+            z-index:-1;
+            width:0%;
+            right:5px;
+            bottom:5px
+         }
+         #landing-container{
+            position:relative;
+            width:100vw;
+            height:100vh
+            
+         }
+         #landing-container>#landing-overlay{
+            position:absolute;
+            z-index:9999!important;
+            background-color:#f8f8fa00!important;
+            top:30%;height:60%
+         }@media all and (max-width:450px){
+            #landing-container>#landing-overlay{
+               overflow:hidden;
+               left:10vw!important;
+               padding:0
+            }
+         }#landing-container>canvas{
+            position:absolute;
+            width:100vw;
+            height:100vh
+         }#main-landing>h1{
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:.4s
+         }@media all and (max-width:450px)
+         {#main-landing>h1:nth-child(2){
+            margin-top:15vh
+         }}#main-landing>ul>li:nth-child(1){
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:1.3s
+         }#main-landing>ul>li:nth-child(2){
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:1.4s
+         }#main-landing>ul>li:nth-child(3){
+            animation:fadeIn ease .6s;
+            opacity:0;
+            animation-fill-mode:forwards;
+            animation-delay:1.5s
+            }#main-landing>ul>li:nth-child(4){
+               animation:fadeIn ease .6s;
+               opacity:0;
+               animation-fill-mode:forwards;
+               animation-delay:1.6s
+            }@keyframes fadeIn{
+               0%{opacity:0}100%{opacity:1}
+            }#sub-nav{
+               list-style:none;
+               padding-left:0;
+               margin:0
+            }#sub-nav>li{
+               display:inline-block;
+               font-family:roboto mono,monospace;
+               font-size:1em;
+               padding-top:0em;
+               font-weight:400;
+               color:var(--dark)
+            }#sub-nav>li>a{
+               padding-right:.25em
+            }.col1{
+               color:var(--dark)
+            }.col2{
+               color:var(--navy)
+            }.col3{
+               color:var(--olive)
+            }.col4{
+               color:var(--salmon)
+            }.rotating-text{
+               overflow:hidden;
+               animation:fadeIn ease .6s;
+               opacity:0;
+               animation-fill-mode:forwards;
+               animation-delay:.8s
+            }@media all and (max-width:450px){
+            .rotating-text{
+               height:2em
+               }
+            }.rotating-text>h1{
+               display:inline-flex;
+               margin:0;
+               vertical-align:top
+            }.rotating-text>h1>.word{
+               position:absolute;
+               display:flex;
+               opacity:0;
+               overflow:hidden;
+               padding-bottom:.12em
+            }.rotating-text>h1>.word>.letter{
+               transform-origin:center center .8em
+            }.rotating-text>h1>.word>.letter.out{
+               transform:rotateX(90deg);
+               transition:.32s cubic-bezier(0.6,0,0.7,0.2)
+            }.rotating-text>h1>.word>.letter.in{
+               transition:.32s ease
+            }.rotating-text>h1>.word>.letter.behind{
+               transform:rotateX(-90deg)
+            }.ext-ref{
+               display:block;
+               margin-left:1.5em;
+               font-weight:700;
+               font-family:roboto mono
+            }ul.lt-hl{
+               font-family:source sans pro;
+               margin-bottom:1em
+            }#contact_buttons a{
+               font-family:roboto mono;
+               font-weight:700;
+               font-size:1em;
+               color:var(--navy);
+               padding:0 .5em 3em
+            }.img-container{
+               position:relative;
+               margin-top:2em;
+               margin-left:3em;
+               min-height:256px
+            }@media all and (max-width:450px){
+               .img-container{
+                  margin-left:0
+               }
+            }.img-container>.me{
+               filter:grayscale(40%);
+               max-height:256px;
+               max-width:100%;
+               border-radius:5px;
+               position:absolute;
+               left:0;top:0
+            }.img-container>.deco{
+               background-color:var(--olive);
+               -webkit-mask:url(res/deco.svg)no-repeat center;
+               mask:url(res/deco.svg)no-repeat center;
+               -webkit-mask-size:contain;
+               mask-size:contain;
+               position:absolute;
+               z-index:3;width:300px;
+               height:200px;
+               top:-50px;
+               left:180px
+            }@media all and (max-width:450px){
+               .img-container>.deco{
+                  width:210px;
+                  height:150px;
+                  left:140px
+               }
+            }.img-container>div>.highlight{
+               z-index:5;
+               position:absolute;
+               top:210px;
+               left:50px
+            }@media all and (max-width:450px){
+               .img-container>div>.highlight{
+                  left:0;width:100%;top:220px
+               }.img-container>div>.highlight code{
+                  font-size:.6em!important
+               }
+            }.img-container>div>.highlight>div{
+               padding:.2em 1em;border-radius:4px
+            }.img-container>div>.highlight code{
+               font-family:Roboto Mono;font-size:.8em
+            }#about:hover .me,#about:hover .deco,#about:hover .highlight-container{
+               filter:grayscale(0%)
+            }#about p:first-of-type{
+               margin-top:0
+            }body[data-aos-easing=custom] [data-aos],[data-aos][data-aos][data-aos-easing=custom]{
+               transition-timing-function:cubic-bezier(0.25,0.8,0.25,1)
+            }.gh-chart{
+               filter:var(--invert-filter);
+               width:100%;
+               margin-bottom:2em
+            }
       </style>
       
-      <style>.lt-content-column:hover h2 .hover {
-        opacity: 1
-      }
-      
-      .lt-content-column:hover h2 .hover::after {
-        width: 100%
-      }
-      
-      .lt-content-column:hover .side-header::before {
-        width: 180px
-      }
-      
-      .side-header-container {
-        margin-top: 2em
-      }
-      
-      .side-header {
-        position: absolute;
-        opacity: .3;
-        font-size: .8em;
-        transition: opacity 2s cubic-bezier(0.25, 0.8, 0.25, 1);
-        transform-origin: top left;
-        transform: translateX(-2em)rotateZ(90deg)rotateZ(180deg)translateX(-100%)
-      }
-      
-      .side-header::before {
-        height: 100%;
-        position: absolute;
-        width: 0;
-        display: inline-block;
-        transform: translateY(-0.5em);
-        border-bottom: 3px solid var(--gray);
-        color: var(--gray);
-        transition: all .6s cubic-bezier(0.25, 0.8, 0.25, 1);
-        transition-delay: .1s;
-        content: '';
-        right: calc(100% + 0.5em)
-      }
-      
+      <style>
+         .lt-content-column:hover h2 .hover{
+            opacity:1
+         }
+         .lt-content-column:hover h2 .hover::after{
+            width:100%
+         }
+         .lt-content-column:hover .side-header::before{
+         width:180px
+         }.side-header-container{
+         margin-top:2em
+         }.side-header{
+         color:var(--navy);
+         position:absolute;
+         opacity:.3;
+         font-size:.8em;
+         transition:opacity 2s cubic-bezier(0.25,0.8,0.25,1);
+         transform-origin:top left;
+         transform:translateX(-2em)rotateZ(90deg)rotateZ(180deg)translateX(-100%)
+         }
+         .side-header::before{
+         height:100%;
+         position:absolute;
+         width:0;
+         /*display:inline-block;*/
+         transform:translateY(-0.5em);
+         color:var(--gray);
+         transition:all .6s cubic-bezier(0.25,0.8,0.25,1);
+         transition-delay:.3s;
+         content:'';
+         right:calc(100% + 0.5em)
+         }
       </style>
       
-      <style>.lt-card {
-        padding: .25em 1em;
-        margin: .5em 0;
-        border-radius: 5px;
-        background-color: var(--lt-colours-light);
-        border: 1px solid var(--lt-colours-gray)
-      }
-      
-      .lt-hover {
-        transition: all .5s cubic-bezier(0.25, 0.8, 0.25, 1)
-      }
-      
-      .lt-hover:hover {
-        box-shadow: 0 14px 28px rgba(27, 33, 48, .18), 0 10px 10px rgba(27, 33, 48, .16)!important
-      }
-      
-      .lt-shadow {
-        box-shadow: 0 14px 28px rgba(27, 33, 48, .06), 0 10px 10px rgba(27, 33, 48, .02)
-      }
-      
-      ul.lt-hl {
-        list-style: none;
-        padding: 0
-      }
-      
-      ul.lt-hl>li {
-        display: inline-block;
-        border-style: none;
-        font-size: .9em;
-        margin-right: 3px;
-        padding: .3rem;
-        border-radius: 2px;
-        color: #fff0e4;
-        background-color: var(--lt-colours-secondary);
-        margin-bottom: .2em
-      }
-      
-      .lt-flex-col {
-        display: flex;
-        flex-direction: column
-      }
-      
-      .lt-flex-row {
-        display: flex;
-        flex-direction: row
-      }
-      
-      .lt-content-column {
-        padding: 20px 20vw
-      }
-      
-      .lt-centre {
-        text-align: center
-      }
-      
-      .lt-flex-50 {
-        flex: 0 0 50%
-      }
-      
-      .lt-flex-25 {
-        flex: 0 0 25%
-      }
-      
-      .lt-flex-33 {
-        flex: 0 0 33%
-      }
-      
-      .lt-flex-66 {
-        flex: 0 0 66%
-      }
-      
-      .lt-flex-centre {
-        justify-content: center
-      }
-      
+      <style>
+         .lt-card{
+            padding:.25em 1em;
+            margin:.5em 0;
+            border-radius:5px;
+            background-color:var(--lt-colours-light);
+            border:1px solid var(--lt-colours-gray)
+         }.lt-hover{
+            transition:all .5s cubic-bezier(0.25,0.8,0.25,1)
+         }.lt-hover:hover{
+            box-shadow:0 14px 28px rgba(27,33,48,.18),0 10px 10px rgba(27,33,48,.16)!important
+         }.lt-shadow{
+            box-shadow:0 14px 28px rgba(27,33,48,.06),0 10px 10px rgba(27,33,48,.02)
+         }ul.lt-hl{
+            list-style:none;
+            padding:0
+         }ul.lt-hl>li{
+            display:inline-block;
+            border-style:none;
+            font-size:.9em;
+            margin-right:3px;
+            padding:.3rem;
+            border-radius:2px;
+            color:var(--lt-colours-light);
+            background-color:var(--navy);
+            margin-bottom:.2em
+         }.lt-flex-col{
+            display:flex;
+            flex-direction:column
+         }.lt-flex-row{
+            display:flex;
+            flex-direction:row
+         }.lt-content-column{
+            padding:20px 20vw
+         }.lt-centre{
+            text-align:center
+         }.lt-flex-50{
+            flex:0 0 50%
+         }.lt-flex-25{
+            flex:0 0 25%
+         }.lt-flex-33{
+            flex:0 0 33%
+         }.lt-flex-66{
+            flex:0 0 66%
+         }.lt-flex-centre{
+            justify-content:center
+         }
       </style>
       
-      <style>@media screen and (max-width:1440px) {
-        .short-desc {
-          display: None;
-        }
-        #bio .lt-flex-row {
-          flex-direction: column!important;
-        }
-      }
       
+      <style>
+         @media screen and (max-width:1440px){
+            .short-desc{
+               display:None
+            }#bio .lt-flex-row{
+               flex-direction:column!important
+               }
+            }
       </style>
       
-      <style>ul.project_list {
-        padding: 0
-      }
-      
-      .accordion {
-        margin: 1rem 0;
-        padding: 0;
-        list-style: none
-      }
-      
-      .accordion .accordion-arrow {
-        float: right;
-        height: 7px;
-        min-width: 7px;
-        margin-right: 1rem;
-        margin-left: auto;
-        vertical-align: middle;
-        border-right: 2px solid;
-        border-bottom: 2px solid;
-        border-color: var(--dark);
-        transform: rotate(45deg)translateY(0.25em);
-        transition: transform .2s ease-in-out
-      }
-      
-      .accordion .accordion_body.is-active .accordion-arrow {
-        transform: rotateX(180deg)rotateZ(45deg)translateY(-3.5px)translateX(-7px)
-      }
-      
-      .accordion .accordion_body {
-        width: 100%;
-        padding: 1.3em .5em
-      }
-      
-      @media all and (max-width:450px) {
-        .accordion .accordion_body {
-          padding: .8em!important
-        }
-      }
-      
-      .accordion .accordion_body>.accordion-panel {
-        display: none
-      }
-      
-      .accordion .accordion_body>.accordion-panel ul.lt-hl {
-        margin: 0
-      }
-      
-      .accordion .accordion_body>.proj_desc>.accordion-arrow {
-        margin-left: .5em
-      }
-      
-      .accordion .accordion_body>.proj_desc>a {
-        font-family: roboto mono;
-        font-weight: 700;
-        font-size: .9em;
-        color: var(--navy);
-        padding-right: 1em
-      }
-      
-      @media all and (max-width:450px) {
-        .accordion .accordion_body>.proj_desc>a {
-          padding-right: .5em!important;
-          font-size: .7em!important;
-          transform: translateY(0.15em)
-        }
-      }
-      
-      .accordion .accordion_body>.proj_desc>.project-title {
-        white-space: nowrap;
-        font-family: source sans pro;
-        font-weight: 600;
-        padding-right: .3em
-      }
-      
-      .accordion .accordion_body>.proj_desc>.short-desc {
-        width: auto!important;
-        white-space: nowrap;
-        margin: 0
-      }
-      
-      .accordion .accordion_body>.proj_desc>.spacer {
-        flex: 25%
-      }
-      
-      .accordion .accordion_body>.job-info>.company-logo {
-        width: 40px;
-        height: 40px;
-        border-radius: 3px;
-        margin-right: 1em
-      }
-      
-      @media all and (max-width:450px) {
-        .accordion .accordion_body>.job-info>.company-logo {
-          width: 30px!important;
-          height: 30px!important
-        }
-      }
-      
-      .accordion .accordion_body>.job-info>.accordion-arrow {
-        margin-top: 1em
-      }
-      
-      @media all and (max-width:450px) {
-        .accordion .accordion_body>.job-info>.accordion-arrow {
-          margin-top: .5em
-        }
-      }
-      
-      .accordion .accordion_body>.job-info h2 {
-        font-weight: 600;
-        font-size: 1.2em;
-        font-family: source sans pro;
-        margin: 0
-      }
-      
-      @media all and (max-width:450px) {
-        .accordion .accordion_body>.job-info h2 {
-          font-size: 1em;
-          transform: translateY(0.2em)
-        }
-      }
-      
-      .accordion .accordion_body>.job-info p {
-        font-weight: 400;
-        color: var(--gray);
-        font-size: .9em;
-        font-family: roboto mono;
-        margin: 0
-      }
-      
-      @media all and (max-width:450px) {
-        .accordion .accordion_body>.job-info p {
-          display: none
-        }
-      }
-      
+      <style>
+         ul.project_list{
+            padding:0
+         }.accordion{
+            margin:1rem 0;
+            padding:0;
+            list-style:none
+         }.accordion .accordion-arrow{
+            float:right;
+            height:7px;
+            min-width:7px;
+            margin-right:1rem;
+            margin-left:auto;
+            vertical-align:middle;
+            border-right:2px solid;
+            border-bottom:2px solid;
+            border-color:var(--dark);
+            transform:rotate(45deg)translateY(0.25em);
+            transition:transform .2s ease-in-out
+         }.accordion .accordion_body.is-active .accordion-arrow{
+            transform:rotateX(180deg)rotateZ(45deg)translateY(-3.5px)translateX(-7px)
+         }.accordion .accordion_body{
+            width:100%;
+            padding:1.3em .5em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body{
+               padding:.8em!important
+            }
+         }.accordion .accordion_body>.accordion-panel{
+            display:none
+         }.accordion .accordion_body>.accordion-panel ul.lt-hl{
+            margin:0
+         }.accordion .accordion_body>.proj_desc>.accordion-arrow{
+            margin-left:.5em
+         }.accordion .accordion_body>.proj_desc>a{
+            font-family:roboto mono;
+            font-weight:700;
+            font-size:.9em;
+            /*color:var(--navy);*/
+            padding-right:1em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.proj_desc>a{
+               padding-right:.5em!important;
+               font-size:.7em!important;
+               transform:translateY(0.15em)
+            }
+         }.accordion .accordion_body>.proj_desc>.project-title{
+            white-space:nowrap;
+            font-family:source sans pro;
+            font-weight:600;padding-right:.3em
+         }.accordion .accordion_body>.proj_desc>.short-desc{
+            width:auto!important;
+            white-space:nowrap;
+            margin:0
+         }.accordion .accordion_body>.proj_desc>.spacer{
+            flex:25%
+         }.accordion .accordion_body>.job-info>.company-logo{
+            width:40px;
+            height:40px;
+            border-radius:3px;
+            margin-right:1em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info>.company-logo{
+               width:30px!important;
+               height:30px!important
+            }
+         }.accordion .accordion_body>.job-info>.accordion-arrow{
+            margin-top:1em
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info>.accordion-arrow{
+               margin-top:.5em
+            }
+         }.accordion .accordion_body>.job-info h2{
+            font-weight:600;
+            font-size:1.2em;
+            font-family:source sans pro;
+            margin:0
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info h2{
+               font-size:1em;
+               transform:translateY(0.2em)
+            }
+         }.accordion .accordion_body>.job-info p{
+            font-weight:400;
+            color:var(--gray);
+            font-size:.9em;
+            font-family:roboto mono;
+            margin:0
+         }@media all and (max-width:450px){
+            .accordion .accordion_body>.job-info p{
+               display:none
+            }
+         }
       </style>
       
-      <style>.mobile-only {
-        display: None
-      }
-      
-      @media all and (max-width:450px) {
-        .mobile-only {
-          display: inline-block!important
-        }
-        h1 {
-          font-size: 2em!important
-        }
-        h3 {
-          font-size: 1em!important
-        }
-        p {
-          font-size: 1em!important
-        }
-        .mobile-hide {
-          display: None!important
-        }
-        #about,
-        #experience,
-        #projects {
-          padding: 0 5vw 30px!important
-        }
-      }
-      
+      <style>
+         .mobile-only{
+            display:None
+         }@media all and (max-width:450px){
+            .mobile-only{
+               display:inline-block!important
+            }h1{
+               font-size:2em!important
+            }h3{
+               font-size:1em!important
+            }p{
+               font-size:1em!important
+            }.mobile-hide{
+               display:None!important
+            }#about,#experience,#projects{
+               padding:0 5vw 30px!important
+            }
+         }
       </style>
+
       
-      <style>.darkmode {
-        text-align: right;
-        padding: 2em;
-        animation: fadeIn ease .6s;
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-delay: 2s
-      }
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171496236-1"></script>
+
+  </head>
+   
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
       
-      .darkmode>.toggle {
-        display: none;
-        box-sizing: border-box
-      }
-      
-      .darkmode>.toggle:checked+.toggle-button:after {
-        left: 50%
-      }
-      
-      .darkmode>.toggle+.toggle-button {
-        box-sizing: border-box;
-        outline: 0;
-        display: inline-block;
-        width: 3em;
-        height: 1.5em;
-        position: relative;
-        cursor: pointer;
-        border: 2px solid var(--gray);
-        user-select: none;
-        padding: 2px;
-        transition: all .2s ease;
-        border-radius: 2em
-      }
-      
-      .darkmode>.toggle+.toggle-button:after,
-      .darkmode>.toggle+.toggle-button:before {
-        position: relative;
-        display: block;
-        box-sizing: border-box;
-        content: "";
-        width: 50%;
-        height: 100%
-      }
-      
-      .darkmode>.toggle+.toggle-button:before {
-        display: none
-      }
-      
-      .darkmode>.toggle+.toggle-button:after {
-        left: 0;
-        transition: all .2s ease;
-        background: var(--gray);
-        content: "";
-        border-radius: 1em
-      }
-      
-      .darkmode #dayIcon {
-        position: relative;
-        width: 20px;
-        height: 20px;
-        top: -1.5px;
-        margin: 0 7px;
-        fill: var(--gray)
-      }
-      
-      .darkmode #nightIcon {
-        position: relative;
-        width: 18px;
-        height: 18px;
-        top: -2px;
-        margin: 0 7px;
-        fill: var(--gray)
-      }
-      
-      </style>
-  
-</head>
-   <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-      
+    <!--intro-->
     <div id="landing-container">
-       <div class="darkmode">
-          <label for="darkmode-toggle">
-             <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35">
-                <path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06L6.439 8.561zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"></path>
-             </svg>
-          </label>
-          <input class="toggle" id="darkmode-toggle" type="checkbox">
-          <label class="toggle-button" for="darkmode-toggle"></label>
-          <label for="darkmode-toggle">
-             <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'">
-                <path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"></path>
-             </svg>
-          </label>
-       </div>
        
-       <div id="landing-overlay" class="lt-content-column">
-         <h2 class="side-header-container"><span class="hover side-header">
-            <a href="https://www.linkedin.com/in/terryfu33/" class="tm-social-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/_terryfu/" class="tm-social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://vsco.co/terr3124/gallery" class="tm-social-icon"><i class="fab fa-vsco"></i></a>
-            <a href="https://www.github.com/terryfu33" class="tm-social-icon"><i class="fab fa-github"></i></a>
-            <a href="mailto:terryfu33@gmail.com" class="tm-social-icon"><i class="fa fa-envelope"></i></a>
-            </span>
-         </h2>
-         <div>
-             <div id="main-landing">
-                <!--<a href="https://animejs.com"><img src="resources/anime.gif" width="250"/></a>-->
-                <h1>Hi! I’m Terry<a>.</a></h1>
-                <div class="rotating-text">
-                   
-                   <h1 class="mobile-hide"><span class="word col1"></span></h1>
-                </div>
-                
-                <ul id="sub-nav">
-                   <li><a  href="#about"><strong><em>/about</em></strong></a></li>
-                   <li><a  href="#experience"><strong><em>/work</em></strong></a></li>
-                   <li><a  href="#projects"><strong><em>/projects</em></strong></a></li>
-                   <!--<li><a  href ="https://github.com/terryfu33"><strong><em>/github</em></strong></a></li>-->
-                   <li><a  href="#projects"><strong><em>/design</em></strong></a></li>
-                </ul>
-             </div>
-          </div>
-       </div>
-       <canvas id="canvas" width="2624" height="1704"></canvas>
-    </div>
-    
-    <div class="lt-content-column" id="about">
-       <div id="bio" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200" class="aos-init aos-animate">
-          <h2 class="side-header-container"><span class="hover side-header">/about</span></h2>
-          <div class="lt-flex-row">
-             <div class="lt-flex-50 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <p>I'm Terry, a curious software developer interested in <strong>Info Security </strong>and <strong>Artifical Intelligence</strong>.
-                   Based in <strong>Calgary, Alberta</strong>, I am currently studying <strong>Computer Science</strong> and 
-                   <strong>Actuarial Science</strong> at the <strong>University of Calgary</strong>. 
-                </p>
-                <p>In my spare time, you can find me gaming with friends, exploring new tech, 
-                   or tinkering about with custom keyboards! 
-                </p>
-                <p>This coming <strong>August</strong> , I will be training with the <strong>Dinos Men's Rugby Team</strong>.
-                </p>
-                <p>
-                   Currenlty, I am working on the back end for my <strong>TechStart UCalgary Team</strong>, my chrome extension <a>priceCheck</a>,
-                   and <a href = "https://github.com/terryfu33/365DaysLeetCode">365 Days of LeetCode</a>.
-                </p>
-                <p>Feel free to check out my 
-                   <a href ="https://www.linkedin.com/in/terryfu33/" target = "_blank"><strong><em> linkedin</em></strong></a>, 
-                   <a href ="https://www.instagram.com/_terryfu/" target = "_blank"><strong><em> instagram</em></strong></a>, 
-                   <a href ="https://vsco.co/terr3124/gallery"><strong><em> vsco</em></strong></a>,
-                   <a href ="https://www.github.com/terryfu33" target = "_blank"><strong><em> github</em></strong></a>, or my
-                   <a href ="terryfuResume.pdf" target = "_blank"><strong><em>resume</em></strong></a>.
-                </p>
-             </div>
-             <!--<img class="lt-shadow me" src="images/me.JPG" alt="Terry Fu" loading="lazy" >-->
-          </div>
-       </div>
-    </div>
-
-    <div class="lt-content-column" id="skills">
-       <div id="bio" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100" class="aos-init">
-          <h2 class="side-header-container"><span class="hover side-header">/languages</span></h2>
-          <div class="lt-flex-row">
-             <div class="lt-flex-50 aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-                
-                <div class="container">
-                  
-                   <div class="bar back expert" data-skill="Python"></div>
-                   <div class="bar back expert" data-skill="Java"></div>
-                   <div class="bar back expert" data-skill="HTML5"></div>
-                   <div class="bar back advanced" data-skill="CSS3"></div>
-                   <div class="bar back advanced" data-skill="C"></div>
-                   <div class="bar back advanced" data-skill="JavaScript"></div>
-                   <div class="bar back intermediate" data-skill="C#"></div>
-                   <div class="bar back intermediate" data-skill="Assembly Armv8"></div>
-                 </div>
- 
-                 <div class="accordion aos-init" data-aos="fade-right" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
-                   <div class="lt-shadow lt-card lt-flex-row accordion-item">
-                      <div class="accordion_body">
-                         <div class="lt-flex-row job-info">
-                            <div>
-                               <h2 class="job_name">Technologies</h2>
-                            </div>
-                            <div class="accordion-arrow"></div>
-                         </div>
-                         <div class="accordion-panel">
-                            <ul class="lt-hl">
-                               <li>React Js</li>
-                               <li>Node Js</li>
-                               <li>Express Js</li>
-                               <li>Angular Js</li>
-                               <li>MySQL</li>
-                               <li>PHP</li>
-                                <li>Flask</li>
-                                <li>BootStrap</li>
-                                <li>Git</li>
-                                <li>Heroku</li>
-                                <li>REST API</li>
-                                <li>Python Turtle</li>
-                                <li>Unity</li>
-                                <li>Javafx</li>
-                                <li>AOS</li>
-                                <li>Firebase</li>
-                               <li>MongoDB</li>
-                               <li>PostgreSQL</li>
-                               <li>AWS</li>
-                               <li>npm</li>
- 
-                             </ul>
-                         </div>
-                       </div>
-                   </div>
-                 </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    
-    <div class="lt-content-column aos-init" id="experience" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-       <h2 class="side-header-container"><span class="hover side-header">/experience</span></h2>
-       <div id="expcards">
-          <!--Current-->
-          <div class="accordion aos-init" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="lt-shadow lt-card lt-flex-row accordion-item">
-                <div class="accordion_body">
-                   <div class="lt-flex-row job-info">
-                      <div>
-                         <h2 class="job_name">Current</h2>
-                         <p class="job_title"></p>
-                         <div class="spacer"></div>
-                         <a></a>
-                      </div>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>Currently searching for interships for summer 2021!
-                      </p>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <!--TechStart-->
-          <div class="accordion aos-init" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="lt-shadow lt-card lt-flex-row accordion-item">
-                
-                <div class="accordion_body">
-                   <div class="lt-flex-row job-info">
-                      <img class="company-logo" src="images/tech.jpg"  style="width:60px;height:60px;vertical-align:middle">
-                      <div>
-                         <h2 class="job_name">Tech Start UCalgary - Software Developer </h2>                         
-                         <a> Feb 2021 - Current</a>
-                      </div>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>Integrating a full stack application as a solution for small and medium enterprises using QR codes to enable logistical services to lower costs within a team of 6 developers and 5 business strategists with React 
-                         in an agile development environment • Developing an API for the application to transfer data within the application, and to the Ethereum blockchain 
-                      </p>
-                      <ul class="lt-hl">
-                         <li>Html5</li>
-                         <li>CSS3</li>
-                         <li>JavaScript</li>
-                         <li>React js</li>
-                         <li>GoLang</li>
-                         <li>Drizzle</li>
-                         <li>REST API</li>
-                         <li>Truffle/Ganache</li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <!-- ExPandable-->
-          <div class="accordion aos-init" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="lt-shadow lt-card lt-flex-row accordion-item">
-                
-                <div class="accordion_body">
-                   <div class="lt-flex-row job-info">
-                      <img class="company-logo" src="images/expandable.jpg" style="width:60px;height:60px;vertical-align:middle">
-                      <div>
-                         <h2 class="job_name">ExPandable Esports - Front-End Developer </h2>                         
-                         <a>Jan 2021 - Current</a>
-                      </div>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>Implemented websites, and landing pages from concept through deployment.
-                         Helped reduce all costs in hosting webpage.
-                         Assessed UX and UI designs for quality.
-                      </p>
-                      <ul class="lt-hl">
-                         <li>Html5</li>
-                         <li>CSS3</li>
-                         <li>JavaScript</li>
-                         <li>AJAX PHP</li>
-                         <li>BootStrap</li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <!--Python Tutor-->
-          <div class="accordion aos-init" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-            <div class="lt-shadow lt-card lt-flex-row accordion-item">
-
-               <div class="accordion_body">
-                  <div class="lt-flex-row job-info">
-                   <img class="company-logo" src="images/candc.jpeg" style="width:70px;height:60px;vertical-align:middle">
-                     <div>
-                        <h2 class="job_name">C&C Educenter - Tutor/Teaching Assistant </h2>
-                        <a> Nov 2019 - Mar 2020</a>
-                        <div class="spacer"></div>
-                        
-                     </div>
+         <div id="landing-overlay" class="lt-content-column" >
+            <div> 
+               <div id="main-landing">
+                  <!--<a href="https://animejs.com"><img src="resources/anime.gif" width="250"/></a>-->
+                  <h1>Hi! I’m Terry<a>.</a></h1>
+                  <div class="rotating-text">
                      
-                     <div class="accordion-arrow"></div>
+                     <h1 class="mobile-hide"><span class="word col1"></span></h1>
                   </div>
-                  <div class="accordion-panel">
-                     <p>helped teach a class of high schoolers in Python, going as advanced as recursion. helped
-                      develop weekly lessons plans, and solutions to given problems.
-                      one on one tutored a student in Scratch and later Python
-                     </p>
-                     <ul class="lt-hl">
-                         <li>Python</li>
-                      </ul>
+                  
+                  <ul id="sub-nav">
+                     <li><a style="text-decoration:none" href="#about"><strong><em>/about</em></strong></a></li>
+                     <li><a style="text-decoration:none" href="#experience"><strong><em>/work</em></strong></a></li>
+                     <li><a style="text-decoration:none" href="#projects"><strong><em>/projects</em></strong></a></li>
+                     <li><a style="text-decoration:none" href ="https://github.com/terryfu33"><strong><em>/github</em></strong></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <canvas id="canvas" width="2295" height="1505"></canvas>
+    </div>
+
+    <!--about-->
+    <div class="lt-content-column" id="about">
+         <div id="bio" data-aos="zoom-in-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100" class="aos-init">
+            <h2 class="side-header-container"><span class="hover side-header">about me</span></h2>
+            <div class="lt-flex-row">
+               <div class="lt-flex-50 aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <p>I'm Terry, a software developer interested in Info Security and Artifical Intelligence.
+                     Based in <strong>Calgary, Alberta</strong>, I am currently studying <strong>Computer Science</strong> and 
+                     <strong>Actuarial Science</strong> at the <strong>University of Calgary</strong>. 
+                  </p>
+                  <p>In my spare time, you can find me gaming with friends, exploring new tech, 
+                     or tinkering about with custom keyboards! 
+                  </p>
+                  <p>This coming <strong>August</strong> , I will be joining the <strong>Dinos Men's Rugby Team</strong>.
+                  </p>
+                  <!--
+                  <ul id="sub-nav">
+                     <li><a href ="https://www.linkedin.com/in/terryfu33/"><strong><em>linkedln</em></strong></a></li>
+                     <li><a href ="https://www.instagram.com/_terryfu/"><strong><em>instagram</em></strong></a></li>
+                     <li><a href ="https://vsco.co/terr3124/gallery"><strong><em>vsco</em></strong></a></li>
+                     <li><a href ="terryfuResume.pdf" ><strong><em>resume</em></strong></a></li>
+                     
+                  </ul>-->
+                  <p>Feel free to check out my 
+                     <a href ="https://www.linkedin.com/in/terryfu33/"><strong><em> linkedin</em></strong></a>, 
+                     <a href ="https://www.instagram.com/_terryfu/"><strong><em> instagram</em></strong></a>, 
+                     <a href ="https://vsco.co/terr3124/gallery"><strong><em> vsco</em></strong></a>, or my
+                     <a href ="terryfuResume.pdf" target = "_blank"><strong><em>resume</em></strong></a>.
+
+
+                  </p>
+               </div>
+               <div class="lt-flex-50 img-container">
+                  <div class="deco" loading="lazy"></div>
+                  <img class="lt-shadow me" src="images/me.JPG" alt="Terry Fu" loading="lazy" >
+                  
+                  
+                   
+               </div>
+            </div>
+            
+         </div>
+    </div>
+
+    <!--Skill-->
+    <div class="lt-content-column" id="about">
+      <div id="bio" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100" class="aos-init">
+         <h2 class="side-header-container"><span class="hover side-header">languages</span></h2>
+         <div class="lt-flex-row">
+            <div class="lt-flex-50 aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               
+               <div class="container">
+                 
+                  <div class="bar back expert" data-skill="Python"></div>
+                  <div class="bar back expert" data-skill="Java"></div>
+                  <div class="bar back expert" data-skill="HTML5"></div>
+                  <div class="bar back advanced" data-skill="CSS3"></div>
+                  <div class="bar back advanced" data-skill="C"></div>
+                  <div class="bar back advanced" data-skill="JavaScript"></div>
+                  <div class="bar back intermediate" data-skill="C#"></div>
+                  <div class="bar back intermediate" data-skill="Assembly Armv8"></div>
+                </div>
+
+                <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                     <div class="accordion_body">
+                        <div class="lt-flex-row job-info">
+                           <div>
+                              <h2 class="job_name">Technologies</h2>
+                           </div>
+                           <div class="accordion-arrow"></div>
+                        </div>
+                        <div class="accordion-panel">
+                           <ul class="lt-hl">
+                              <li>React Js</li>
+                              <li>Node Js</li>
+                              <li>Express Js</li>
+                              <li>Angular Js</li>
+                              <li>MySQL</li>
+                              <li>PHP</li>
+                               <li>Flask</li>
+                               <li>BootStrap</li>
+                               <li>Git</li>
+                               <li>Heroku</li>
+                               <li>REST API</li>
+                               <li>Python Turtle</li>
+                               <li>Unity</li>
+                               <li>Javafx</li>
+                               <li>AOS</li>
+                               <li>Firebase</li>
+                              <li>MongoDB</li>
+                              <li>PostgreSQL</li>
+                              <li>AWS</li>
+                              <li>npm</li>
+
+                            </ul>
+                        </div>
+                      </div>
                   </div>
                 </div>
             </div>
-          </div>
-          <!--UofC-->
-          <div class="accordion aos-init" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="lt-shadow lt-card lt-flex-row accordion-item">
-              
-                <div class="accordion_body">
-                   <div class="lt-flex-row job-info">
-                      <img class="company-logo" src="images/uofc.png" style="width:60px;height:60px;vertical-align:middle">
-                      <div>
-                         <h2 class="job_name">UofC - Computer Science Combined w/ Actuarial Science </h2>
-                         <a> 2019 - Current</a>
-                         <div class="spacer"></div>
-                         
-                      </div>
-                      
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>Combined Bachelors Degree cGPA 3.49
-                      </p>
-                      <p>
-                         Relevant Course Work:
-                      </p>
-                      <ul class="lt-hl">
-                         <li>CPSC 331 - Data Structures, Algorithms, and Their Analysis</li>
-                         <li>CPSC 359 - Computer Machinery II</li>
-                         <li>ACSC 325 - Theory of Interest/Mathematics of Finance</li>
-                         <li>ACSC 327 - Life Contingencies I</li>
-                         <li>MATH 367 - University Calculus III</li>
-                      </ul>
-                   </div>
-                 </div>
-             </div>
-           </div>
-       </div>
-    </div>
+         </div>
+      </div>
+   </div>
     
-    <div id="projects" class="lt-content-column aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-       <h2 class="side-header-container"><span class="hover side-header">/projects</span></h2>
-       <div class="project_list">
-          <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">priceCheck - ongoing</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a class = "htext">Html</a><a class = "csstext">CSS</a><a class = "jstext">Js</a>
-                      <div class="accordion-arrow"></div>
+   <!--work-->
+    <div class="lt-content-column aos-init" id="experience" data-aos="fade-left" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+         <h2 class="side-header-container"><span class="hover side-header">experience</span></h2>
+         <div id="expcards">
+            <!--Current-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                  <div class="accordion_body">
+                     <div class="lt-flex-row job-info">
+                        <div>
+                           <h2 class="job_name">Current</h2>
+                           <p class="job_title"></p>
+                           <div class="spacer"></div>
+                           <a></a>
+                        </div>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>Currently searching for interships for summer 2021!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--TechStart-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                  
+                  <div class="accordion_body">
+                     <div class="lt-flex-row job-info">
+                        <img class="company-logo" src="images/tech.jpg" style="width:60px;height:60px;vertical-align:middle">
+                        <div>
+                           <h2 class="job_name">Tech Start UCalgary - Software Developer </h2>                         
+                           <a> Feb 2021 - Current</a>
+                        </div>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>Integrating a full stack application as a solution for small and medium enterprises using QR codes to enable logistical services to lower costs within a team of 6 developers and 5 business strategists with React 
+                           in an agile development environment • Developing an API for the application to transfer data within the application, and to the Ethereum blockchain 
+                        </p>
+                        <ul class="lt-hl">
+                           <li>Html5</li>
+                           <li>CSS3</li>
+                           <li>JavaScript</li>
+                           <li>React js</li>
+                           <li>GoLang</li>
+                           <li>Drizzle</li>
+                           <li>REST API</li>
+                           <li>Truffle/Ganache</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ExPandable-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                  
+                  <div class="accordion_body">
+                     <div class="lt-flex-row job-info">
+                        <img class="company-logo" src="images/expandable.jpg" style="width:60px;height:60px;vertical-align:middle">
+                        <div>
+                           <h2 class="job_name">ExPandable Esports - Front-End Developer </h2>                         
+                           <a>Jan 2021 - Current</a>
+                        </div>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>Implemented websites, and landing pages from concept through deployment.
+                           Helped reduce all costs in hosting webpage.
+                           Assessed UX and UI designs for quality.
+                        </p>
+                        <ul class="lt-hl">
+                           <li>Html5</li>
+                           <li>CSS3</li>
+                           <li>JavaScript</li>
+                           <li>AJAX PHP</li>
+                           <li>BootStrap</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Python Tutor-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+              <div class="lt-shadow lt-card lt-flex-row accordion-item">
+
+                 <div class="accordion_body">
+                    <div class="lt-flex-row job-info">
+                     <img class="company-logo" src="images/candc.jpeg" style="width:70px;height:60px;vertical-align:middle">
+                       <div>
+                          <h2 class="job_name">C&C Educenter - Tutor/Teaching Assistant </h2>
+                          <a> Nov 2019 - Mar 2020</a>
+                          <div class="spacer"></div>
+                          
+                       </div>
+                       
+                       <div class="accordion-arrow"></div>
+                    </div>
+                    <div class="accordion-panel">
+                       <p>helped teach a class of high schoolers in Python, going as advanced as recursion. helped
+                        develop weekly lessons plans, and solutions to given problems.
+                        one on one tutored a student in Scratch and later Python
+                       </p>
+                       <ul class="lt-hl">
+                           <li>Python</li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!--UofC-->
+            <div class="accordion aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="lt-shadow lt-card lt-flex-row accordion-item">
+                
+                  <div class="accordion_body">
+                     <div class="lt-flex-row job-info">
+                        <img class="company-logo" src="images/uofc.png" style="width:60px;height:60px;vertical-align:middle">
+                        <div>
+                           <h2 class="job_name">UofC - Computer Science Combined w/ Actuarial Science </h2>
+                           <a> 2019 - Current</a>
+                           <div class="spacer"></div>
+                           
+                        </div>
+                        
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>Combined Bachelors Degree cGPA 3.49
+                        </p>
+                        <p>
+                           Relevant Course Work:
+                        </p>
+                        <ul class="lt-hl">
+                           <li>CPSC 331 - Data Structures, Algorithms, and Their Analysis</li>
+                           <li>CPSC 359 - Computer Machinery II</li>
+                           <li>ACSC 325 - Theory of Interest/Mathematics of Finance</li>
+                           <li>ACSC 327 - Life Contingencies I</li>
+                           <li>MATH 367 - University Calculus III</li>
+                        </ul>
+                     </div>
                    </div>
-                   <div class="accordion-panel">
-                      <p>priceCheck is an chrome extenstion that can quickly search up similar/the same 
-                         items that are in your chart on any website, and quickly tell you if you are getting the best price 
-                         for such items. It will only be comaparing prices with big retailers, such as Amazon, Walmart etc..
-                      </p>
-                      <ul class="lt-hl">
+               </div>
+             </div>
+         </div>
+    </div>
+      
+    <!--projects-->
+    <div id="projects" class="lt-content-column aos-init" data-aos="fade-right" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+         <h2 class="side-header-container"><span class="hover side-header">projects</span></h2>
+         <div class="project_list">
+            <!--priceChecks-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">priceCheck - ongoing</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a class = "htext">Html</a><a class = "csstext">CSS</a><a class = "jstext">Js</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>priceCheck is an chrome extenstion that can quickly search up similar/the same 
+                           items that are in your chart on any website, and quickly tell you if you are getting the best price 
+                           for such items. It will only be comaparing prices with big retailers, such as Amazon, Walmart etc..
+                        </p>
+                        <ul class="lt-hl">
+                           <li>FireBase</li>
+                           <li>Browserify</li>
+                           <li>Node.js</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--blog-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">weBlog</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a href ="https://github.com/terryfu33/blog">Source</a><a class = "jstext">PERN stack</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>weBlog is a social media application that allows users to post images, search and follow other
+                           users, and interact with those images. It is a CRUD app and stores images in AWS S3 buckets, and 
+                           other information in tables with PostgreSQL. Currently having issues deploying to heroku, will as sson as possible
+
+                        </p>
+                        <ul class="lt-hl">
+                           <li>PostgreSQL</li>
+                           <li>Node js</li>
+                           <li>Angular js</li>
+                           <li>Express js</li>
+                           <li>AWS</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>            
+             <!--iChat-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">iChat v2</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a href ="https://ichat33.herokuapp.com/">Link</a><a href ="https://github.com/terryfu33/iChat">Source</a><a class = "jstext">MERN stack</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p><strong>v2 </strong> Utilized the MERN stack to create a similar chatting application
+                           that uses MongoDB's document database to store users information, rooms and chats. Hosted and deployed as a 
+                           Nodejs app through Heroku.
+                           <ul class="lt-hl">
+                              <li>Node js</li>
+                              <li>React js</li>
+                              <li>MongoDB</li>
+                              <li>Express js</li>
+                              <li>Heroku</li>
+                              <li>REST API</li>
+                           </ul>
+                        </p>
+                        <p><strong>v1 </strong>javascript application that utilizes firebase's realtime databases to store user names and messages sent.
+                           displays past messages upon launch in a simple web chat application. Hosted through firebase
+                           <a href ="https://ichat-d9263.firebaseapp.com/">Link</a>
+                        </p>
+                        <ul class="lt-hl">
                          <li>FireBase</li>
-                         <li>Browserify</li>
+                         <li>React js</li>
+                      </ul>
+                     </div>
+                  </div>
+               </div>
+             </div>
+             <!--musicsearch-->
+             <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">iMusic v2</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a href ="https://terryfu.ca/iMusicV2">Link</a>
+                        <a href ="https://github.com/terryfu33/iMusicV2">Source</a><a class = "jstext">Js</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p><strong>v2 </strong> recreate the spotify application UI, utilizing their REST api,
+                           and authentication for users. After logging in, users can search for songs, see top songs,
+                           and access,play and edit their playlists. Songs will only be able to be played in a 30 second 
+                           preview (plans to allow full songs to be played). Hosted through gh-pages branch 
+                           
+                           <ul class="lt-hl">
+                              <li>React.js</li>
+                              <li>REST API</li>
+                              <li>Git</li>
+                           </ul>
+                        <p><strong>v1 - musicSearch </strong>javascript application that utilizes spotify's api to authenticate users to be able to search for music/artists and 
+                           add them to a new or existing playlist on their spotify account. plans to add new feautures and fix UI. Hosted through Heroku
+                           <a href ="https://musicsearch33.herokuapp.com/">Link</a>
+                        </p>
+                        <ul class="lt-hl">
                          <li>Node.js</li>
-                      </ul>
-                   </div>
-                </div>
+                         <li>React.js</li>
+                         <li>REST API</li>
+                         <li>Heroku</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
              </div>
-          </div>
-          <!--blog-->
-          <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">weBlog</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a href ="https://github.com/terryfu33/blog">Source</a><a class = "jstext">PERN</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>weBlog is a social media application that allows users to post images, search and follow other
-                         users, and interact with those images. It is a CRUD app and stores images in AWS S3 buckets, and 
-                         other information in tables with PostgreSQL. Currently having issues deploying to heroku, will as sson as possible
+             <!--findPath-->
+             <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">findPath()</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a href ="https://terryfu.ca/findPath">Link</a><a href ="https://github.com/terryfu33/findPath">Source</a><a class = "htext">Html</a><a class = "jstext">Js</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>a path finder visualiser for depth first search, breadth first search, bi-directional search
+                           and Dijkstra's algorithm to showcase algorithm knowledge. plans to add sorting algorithms next
 
-                      </p>
-                      <ul class="lt-hl">
-                         <li>PostgreSQL</li>
-                         <li>Node js</li>
-                         <li>Angular js</li>
-                         <li>Express js</li>
-                         <li>AWS</li>
+                        </p>
+                        <ul class="lt-hl">
+                           <li>BootStrap</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>            
+             <!--Website-->
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">personal website</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a class = "htext">Html</a><a class = "csstext">CSS</a><a class = "jstext">Js</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>I was struggling to keep organized with my links, and projects so I decided to create a page where I could keep all my
+                          information in an easily accessible page, as well as showcasing my knowledge in coding. Also,learning web design, Html, CSS and JavaScript
+                          was a great addition. Hosted through github pages
+                        </p>
+                        <ul class="lt-hl">
+                         <li>Bootstrap</li>
+                         <li>AOS</li>
                       </ul>
-                   </div>
-                </div>
-             </div>
-          </div>            
-           <!--iChat-->
-           <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">iChat v2</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a href ="https://ichat33.herokuapp.com/">Link</a><a href ="https://github.com/terryfu33/iChat">Source</a><a class = "jstext">MERN</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p><strong>v2 </strong> Utilized the MERN stack to create a similar chatting application
-                         that uses MongoDB's document database to store users information, rooms and chats. Hosted and deployed as a 
-                         Nodejs app through Heroku.
-                         <ul class="lt-hl">
-                            <li>Node js</li>
-                            <li>React js</li>
-                            <li>MongoDB</li>
-                            <li>Express js</li>
-                            <li>Heroku</li>
-                            <li>REST API</li>
-                         </ul>
-                      </p>
-                      <p><strong>v1 </strong>javascript application that utilizes firebase's realtime databases to store user names and messages sent.
-                         displays past messages upon launch in a simple web chat application. Hosted through firebase
-                         <a href ="https://ichat-d9263.firebaseapp.com/">Link</a>
-                      </p>
-                      <ul class="lt-hl">
-                       <li>FireBase</li>
-                       <li>React js</li>
-                    </ul>
-                   </div>
-                </div>
-             </div>
-           </div>
-           <!--musicsearch-->
-           <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">iMusic v2</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a href ="https://terryfu.ca/iMusicV2">Link</a>
-                      <a href ="https://github.com/terryfu33/iMusicV2">Source</a><a class = "jstext">Js</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p><strong>v2 </strong> recreate the spotify application UI, utilizing their REST api,
-                         and authentication for users. After logging in, users can search for songs, see top songs,
-                         and access,play and edit their playlists. Songs will only be able to be played in a 30 second 
-                         preview (plans to allow full songs to be played). Hosted through gh-pages branch 
-                         
-                         <ul class="lt-hl">
-                            <li>React.js</li>
-                            <li>REST API</li>
-                            <li>Git</li>
-                         </ul>
-                      <p><strong>v1 - musicSearch </strong>javascript application that utilizes spotify's api to authenticate users to be able to search for music/artists and 
-                         add them to a new or existing playlist on their spotify account. plans to add new feautures and fix UI. Hosted through Heroku
-                         <a href ="https://musicsearch33.herokuapp.com/">Link</a>
-                      </p>
-                      <ul class="lt-hl">
-                       <li>Node.js</li>
-                       <li>React.js</li>
-                       <li>REST API</li>
-                       <li>Heroku</li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-           </div>
-           <!--findPath-->
-           <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">findPath()</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a href ="https://terryfu.ca/findPath">Link</a><a href ="https://github.com/terryfu33/findPath">Source</a><a class = "htext">Html</a><a class = "jstext">Js</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>a path finder visualiser for depth first search, breadth first search, bi-directional search
-                         and Dijkstra's algorithm to showcase algorithm knowledge. plans to add sorting algorithms next
+                     </div>
+                  </div>
+               </div>
+            </div>
 
-                      </p>
-                      <ul class="lt-hl">
-                         <li>BootStrap</li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>            
-           <!--Website-->
-           <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="200">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">personal website</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a class = "htext">Html</a><a class = "csstext">CSS</a><a class = "jstext">Js</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>I was struggling to keep organized with my links, and projects so I decided to create a page where I could keep all my
-                        information in an easily accessible page, as well as showcasing my knowledge in coding. Also,learning web design, Html, CSS and JavaScript
-                        was a great addition. Hosted through github pages
-                      </p>
-                      <ul class="lt-hl">
-                       <li>Bootstrap</li>
-                       <li>AOS</li>
-                    </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-
-          
-          <!--graphing calc
-          <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">graphing calculator</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a class= "ptext">Python</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>this calculator uses the libraries of Turtle in order to graph advanced arithmetic expressions on a 
-                         given screen. The calculator also gives the functions global max, min and intercepts.
-                      </p>
-                      <ul class="lt-hl">
-                         <li>Turtle</li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>-->
-          <!--encoder
-          <div class="accordion">
-             <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
-                <div class="accordion_body">
-                   <div class="proj_desc lt-flex-row">
-                      <h3 class="project-title">enCoder</h3>
-                      <p class="short-desc"></p>
-                      <div class="spacer"></div>
-                      <a class= "jtext">Java</a>
-                      <div class="accordion-arrow"></div>
-                   </div>
-                   <div class="accordion-panel">
-                      <p>encoder is a java vigenère cipher encoder/decoder that uses a premade table and a passcode. 
-                         the code given to encrypt is then copied into a new code that reflects the length of the original.
-                         by using the table, one can encrpyt or decrypt their code by using both the orignial and new code.
-                         next steps - fancier gui, custom passcode for decoding, possible blockchain storage
-                      </p>
-                   </div>
-                </div>
-             </div>
-          </div>-->
-          
-          
-       </div>
+            
+            <!--graphing calc
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">graphing calculator</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a class= "ptext">Python</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>this calculator uses the libraries of Turtle in order to graph advanced arithmetic expressions on a 
+                           given screen. The calculator also gives the functions global max, min and intercepts.
+                        </p>
+                        <ul class="lt-hl">
+                           <li>Turtle</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>-->
+            <!--encoder
+            <div class="accordion">
+               <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+                  <div class="accordion_body">
+                     <div class="proj_desc lt-flex-row">
+                        <h3 class="project-title">enCoder</h3>
+                        <p class="short-desc"></p>
+                        <div class="spacer"></div>
+                        <a class= "jtext">Java</a>
+                        <div class="accordion-arrow"></div>
+                     </div>
+                     <div class="accordion-panel">
+                        <p>encoder is a java vigenère cipher encoder/decoder that uses a premade table and a passcode. 
+                           the code given to encrypt is then copied into a new code that reflects the length of the original.
+                           by using the table, one can encrpyt or decrypt their code by using both the orignial and new code.
+                           next steps - fancier gui, custom passcode for decoding, possible blockchain storage
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>-->
+            
+            
+         </div>
     </div>
     
     <!--games-->
-    <div id="games" class="lt-content-column aos-init" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-    <h2 class="side-header-container"><span class="hover side-header">/games</span></h2>
-    <div class="project_list">
-       <!--spacePlanes-->
-       <div class="accordion">
-          <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="accordion_body">
-                <div class="proj_desc lt-flex-row">
-                   <h3 class="project-title">spacePlanes</h3>
-                   <p class="short-desc"></p>
-                   <div class="spacer"></div>
-                   <a class= "ctext">C#</a>
-                   <div class="accordion-arrow"></div>
-                </div>
-                <div class="accordion-panel">
-                   <p>spacePlanes is a 3d flight game with decent graphics created with the advantage unity's models. the purpose is to fly and avoid randolmy generated 
-                      metors, while avoiding and taking down enemy places. waves are randomly generated as well, with only one type of enemy currently.
-                   </p>
-                   <ul class="lt-hl">
-                      <li>Unity</li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-       </div>
-       <!--BomberMan-->
-       <div class="accordion">
-          <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="accordion_body">
-                <div class="proj_desc lt-flex-row">
-                   <h3 class="project-title">bomberman</h3>
-                   <p class="short-desc"></p>
-                   <div class="spacer"></div>
-                   <a class= "ctext">C</a>
-                   <div class="accordion-arrow"></div>
-                </div>
-                <div class="accordion-panel">
-                   <p>bomberman
-                      is a terminal game. A 2d array of random floats (between -15,15) and prints a covered board
-                      to the user. The user is then asked to make a turn by giving coordinates to the terminal. The game ends when the player
-                      runs out of bombs, or have 0 lives and a negative score at the same time. 
-                   </p>
-                </div>
-             </div>
-          </div>
-       </div>
-       <!--Space Tanks in Space-->
-       <div class="accordion">
-          <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="accordion_body">
-                <div class="proj_desc lt-flex-row">
-                   <h3 class="project-title">space tanks in space</h3>
-                   <p class="short-desc"></p>
-                   <div class="spacer"></div>
-                   <a class ="jtext">Java</a>
-                   <div class="accordion-arrow"></div>
-                </div>
-                <div class="accordion-panel">
-                   <p>space tanks in space
-                      is a 2d game where a user controls the player tank and attempts to destroy randomly generated enemies. the game also
-                      uses procedural generation for the maps.
-                   </p>
-                   <ul class="lt-hl">
-                      <li>Javafx</li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-       </div>
-       <!--Dungeon Crawler-->
-       <div class="accordion">
-          <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-             <div class="accordion_body">
-                <div class="proj_desc lt-flex-row">
-                   <h3 class="project-title">dungeon crawler</h3>
-                   <p class="short-desc"></p>
-                   <div class="spacer"></div>
-                   <a class ="jtext"> Java </a>
-                   <div class="accordion-arrow"></div>
-                </div>
-                <div class="accordion-panel">
-                   <p>dungeon crawler
-                      is a simple 2d game where a player is faced with endless, randomly generated waves of enemies. An added feature 
-                      of a shop avaliable every few rounds allowed for more gameplay, with boss fights happeneing every few rounds.
-                   </p>
-                   <ul class="lt-hl">
-                      <li>Javax</li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-       </div>
-       
-       
-    </div>
+    <div id="games" class="lt-content-column aos-init" data-aos="zoom-in" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+      <h2 class="side-header-container"><span class="hover side-header">games</span></h2>
+      <div class="project_list">
+         <!--spacePlanes-->
+         <div class="accordion">
+            <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="accordion_body">
+                  <div class="proj_desc lt-flex-row">
+                     <h3 class="project-title">spacePlanes</h3>
+                     <p class="short-desc"></p>
+                     <div class="spacer"></div>
+                     <a class= "ctext">C#</a>
+                     <div class="accordion-arrow"></div>
+                  </div>
+                  <div class="accordion-panel">
+                     <p>spacePlanes is a 3d flight game with decent graphics created with the advantage unity's models. the purpose is to fly and avoid randolmy generated 
+                        metors, while avoiding and taking down enemy places. waves are randomly generated as well, with only one type of enemy currently.
+                     </p>
+                     <ul class="lt-hl">
+                        <li>Unity</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--BomberMan-->
+         <div class="accordion">
+            <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="accordion_body">
+                  <div class="proj_desc lt-flex-row">
+                     <h3 class="project-title">bomberman</h3>
+                     <p class="short-desc"></p>
+                     <div class="spacer"></div>
+                     <a class= "ctext">C</a>
+                     <div class="accordion-arrow"></div>
+                  </div>
+                  <div class="accordion-panel">
+                     <p>bomberman
+                        is a terminal game. A 2d array of random floats (between -15,15) and prints a covered board
+                        to the user. The user is then asked to make a turn by giving coordinates to the terminal. The game ends when the player
+                        runs out of bombs, or have 0 lives and a negative score at the same time. 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Space Tanks in Space-->
+         <div class="accordion">
+            <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="accordion_body">
+                  <div class="proj_desc lt-flex-row">
+                     <h3 class="project-title">space tanks in space</h3>
+                     <p class="short-desc"></p>
+                     <div class="spacer"></div>
+                     <a class ="jtext">Java</a>
+                     <div class="accordion-arrow"></div>
+                  </div>
+                  <div class="accordion-panel">
+                     <p>space tanks in space
+                        is a 2d game where a user controls the player tank and attempts to destroy randomly generated enemies. the game also
+                        uses procedural generation for the maps.
+                     </p>
+                     <ul class="lt-hl">
+                        <li>Javafx</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Dungeon Crawler-->
+         <div class="accordion">
+            <div class="accordion-item lt-shadow lt-card lt-flex-row aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+               <div class="accordion_body">
+                  <div class="proj_desc lt-flex-row">
+                     <h3 class="project-title">dungeon crawler</h3>
+                     <p class="short-desc"></p>
+                     <div class="spacer"></div>
+                     <a class ="jtext"> Java </a>
+                     <div class="accordion-arrow"></div>
+                  </div>
+                  <div class="accordion-panel">
+                     <p>dungeon crawler
+                        is a simple 2d game where a player is faced with endless, randomly generated waves of enemies. An added feature 
+                        of a shop avaliable every few rounds allowed for more gameplay, with boss fights happeneing every few rounds.
+                     </p>
+                     <ul class="lt-hl">
+                        <li>Javax</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
     </div>  
     
-    <div id="contact_buttons" class="lt-centre aos-init" data-aos="fade-up" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
-  
-       <a href="#landing-container">top</a>
-       <a href="mailto:terryfu33@gmail.com">email</a>
-       <a href="#">design</a>
-       <br></br><br></br><br></br><br>
+    <!--ending-->
+    <div id="contact_buttons" class="lt-centre aos-init" data-aos="fade-up" data-aos-duration="750" data-aos-easing="custom" data-aos-offset="100">
+    
+         <a href="#landing-container">top</a>
+         <br></br><br></br><br></br>
     </div>
+     <br></br>
+    <script src="resources/jquery.js"></script>
     
-    <script src="res/jquery.js">
+    <script>
+       
+        function random(low,high){
+          return Math.random()*(high-low)+low
+        }
+        class Visual{
+          constructor(particles,yVariance,maxParticleRadius){
+            this.canvas=document.querySelector('#canvas')
+            this.context=this.canvas.getContext('2d')
+            this.canvasWidth=0
+            this.canvasHeight=0
+            this.particleLength=particles
+            this.yVariance=yVariance
+            this.particles=[]
+            this.particleMaxRadius=maxParticleRadius
+            this.handleResizeBind=this.resize.bind(this)
+            this.initialize()
+            this.render()
+          }
+          initialize(){
+            this.resizeCanvas()
+            for(let i=0;i<this.particleLength;i++){
+              this.particles.push(this.createParticle(i))
+            }
+            this.bind()
+          }
+          bind(){
+            window.addEventListener('resize',this.handleResizeBind,false)
+          }
+          unbind(){
+            window.removeEventListener('resize',this.handleResizeBind,false)
+          }
+          resize(){
+            this.particles=[]
+            this.unbind()
+            this.initialize()
+          }
+          resizeCanvas(){
+            this.canvasWidth=document.body.offsetWidth
+            this.canvasHeight=document.body.offsetHeight
+            this.canvas.width=this.canvasWidth*window.devicePixelRatio
+            this.canvas.height=this.canvasHeight*window.devicePixelRatio
+            this.context=this.canvas.getContext('2d')
+            this.context.scale(window.devicePixelRatio,window.devicePixelRatio)
+          }
+          randomColour(){
+            switch(Math.floor(Math.random()*3)){
+              case 0:return[0,0,0]
+              case 1:return[0,0,0]
+              case 2:return[0,0,0]
+            }
+          }
+          createParticle(id,isRecreate){
+            const radius=random(2,this.particleMaxRadius)
+            const x=isRecreate?-radius:random(0,this.canvasWidth)
+            let y=random(this.canvasHeight/2-this.yVariance,this.canvasHeight/2+this.yVariance)
+            y+=random(-this.yVariance/2,this.yVariance/2)
+            const alpha=random(0.05,0.5)
+            const col=this.randomColour()
+            return{
+              id:id,x:x,y:y,startY:y,radius:radius,startAngle:0,endAngle:Math.PI*2,alpha:alpha,color:{r:col[0],g:col[1],b:col[2]},speed:alpha,amplitude:random(50,250)
+            }
+          }
+          drawParticles(){ 
+            this.particles.forEach(particle=>{
+              this.moveParticle(particle)
+              this.context.beginPath()
+              this.context.fillStyle=`rgba(${particle.color.r}, ${particle.color.g}, ${particle.color.b}, ${particle.alpha})`
+              this.context.arc(particle.x,particle.y,particle.radius,particle.startAngle,particle.endAngle)
+              this.context.fill()
+            })
+          }
+          moveParticle(particle){
+            particle.x+=particle.speed
+            particle.y=particle.startY+particle.amplitude*Math.sin((particle.x*Math.PI)/(360*2))
+          }
+          render(){
+            this.context.clearRect(0,0,this.canvasWidth+this.particleMaxRadius*2,this.canvasHeight)
+            var style=getComputedStyle(document.body)
+            this.context.fillStyle=style.getPropertyValue('--light')
+            this.context.fillRect(0,0,canvas.width,canvas.height)
+            //this.drawParticles()//
+            this.particles.forEach(particle=>{
+              if(particle.x-particle.radius>=this.canvasWidth){
+                this.particles[particle.id]=this.createParticle(particle.id,true)
+              }
+            })
+          
+            requestAnimationFrame(this.render.bind(this))
+          }
+        }
+          new Visual(150,150,8)
+          const words=document.querySelectorAll(".word")
+          words.forEach(word=>{const letters=word.textContent.split("")
+          word.textContent=""
+          letters.forEach(letter=>{const span=document.createElement("span")
+          if(letter==" "){span.textContent=" "}else{span.textContent=letter}
+          span.className="letter"
+          word.append(span)})})
+          var currentWordIndex=0
+          var maxWordIndex=words.length
+          words[currentWordIndex].style.opacity="1"
+          var rotateText=()=>{const currentWord=words[currentWordIndex]
+          const nextWord=words[(currentWordIndex+1)%maxWordIndex]
+          Array.from(currentWord.children).forEach((letter,i)=>{setTimeout(()=>{letter.className="letter out"},i*40)})
+          nextWord.style.opacity="1";Array.from(nextWord.children).forEach((letter,i)=>{letter.className="letter behind";setTimeout(()=>{letter.className="letter in";},500+i*20);})
+          currentWordIndex=(currentWordIndex+1)%maxWordIndex}
+          const init=()=>{rotateText()
+          setInterval(rotateText,3000)}
+          setTimeout(init,2000)
+          $(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown()
+          $(".accordion > .accordion-item > .accordion_body").click(function(){$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing")})
     </script>
     
-    <script>function random(low,high){return Math.random()*(high-low)+low}
-      class Visual{constructor(particles,yVariance,maxParticleRadius){this.canvas=document.querySelector('#canvas')
-      this.context=this.canvas.getContext('2d')
-      this.canvasWidth=0
-      this.canvasHeight=0
-      this.particleLength=particles
-      this.yVariance=yVariance
-      this.particles=[]
-      this.particleMaxRadius=maxParticleRadius
-      this.handleResizeBind=this.resize.bind(this)
-      this.initialize()
-      this.render()}
-      initialize(){this.resizeCanvas()
-      for(let i=0;i<this.particleLength;i++){this.particles.push(this.createParticle(i))}
-      this.bind()}
-      bind(){window.addEventListener('resize',this.handleResizeBind,false)}
-      unbind(){window.removeEventListener('resize',this.handleResizeBind,false)}
-      resize(){this.particles=[]
-      this.unbind()
-      this.initialize()}
-      resizeCanvas(){this.canvasWidth=document.body.offsetWidth
-      this.canvasHeight=document.body.offsetHeight
-      this.canvas.width=this.canvasWidth*window.devicePixelRatio
-      this.canvas.height=this.canvasHeight*window.devicePixelRatio
-      this.context=this.canvas.getContext('2d')
-      this.context.scale(window.devicePixelRatio,window.devicePixelRatio)}
-      randomColour(){switch(Math.floor(Math.random()*3)){case 0:return[40,75,99]
-      case 1:return[132,165,157]
-      case 2:return[242,132,130]}}
-      createParticle(id,isRecreate){const radius=random(2,this.particleMaxRadius)
-      const x=isRecreate?-radius:random(0,this.canvasWidth)
-      let y=random(this.canvasHeight/2-this.yVariance,this.canvasHeight/2+this.yVariance)
-      y+=random(-this.yVariance/2,this.yVariance/2)
-      const alpha=random(0.05,0.5)
-      const col=this.randomColour()
-      return{id:id,x:x,y:y,startY:y,radius:radius,startAngle:0,endAngle:Math.PI*2,alpha:alpha,color:{r:col[0],g:col[1],b:col[2]},speed:alpha,amplitude:random(50,250)}}
-      drawParticles(){this.particles.forEach(particle=>{this.moveParticle(particle)
-      this.context.beginPath()
-      this.context.fillStyle=`rgba(${particle.color.r}, ${particle.color.g}, ${particle.color.b}, ${particle.alpha})`
-      this.context.arc(particle.x,particle.y,particle.radius,particle.startAngle,particle.endAngle)
-      this.context.fill()})}
-      moveParticle(particle){particle.x+=particle.speed
-      particle.y=particle.startY+particle.amplitude*Math.sin((particle.x*Math.PI)/(360*2))}
-      render(){this.context.clearRect(0,0,this.canvasWidth+this.particleMaxRadius*2,this.canvasHeight)
-      var style=getComputedStyle(document.body)
-      this.context.fillStyle=style.getPropertyValue('--light')
-      this.context.fillRect(0,0,canvas.width,canvas.height)
-      //this.drawParticles()
-      this.particles.forEach(particle=>{if(particle.x-particle.radius>=this.canvasWidth){this.particles[particle.id]=this.createParticle(particle.id,true)}})
-      requestAnimationFrame(this.render.bind(this))}}
-      new Visual(150,150,8)
-      const words=document.querySelectorAll(".word")
-      words.forEach(word=>{const letters=word.textContent.split("")
-      word.textContent=""
-      letters.forEach(letter=>{const span=document.createElement("span")
-      if(letter==" "){span.textContent=" "}else{span.textContent=letter}
-      span.className="letter"
-      word.append(span)})})
-      var currentWordIndex=0
-      var maxWordIndex=words.length
-      words[currentWordIndex].style.opacity="1"
-      var rotateText=()=>{const currentWord=words[currentWordIndex]
-      const nextWord=words[(currentWordIndex+1)%maxWordIndex]
-      Array.from(currentWord.children).forEach((letter,i)=>{setTimeout(()=>{letter.className="letter out"},i*40)})
-      nextWord.style.opacity="1";Array.from(nextWord.children).forEach((letter,i)=>{letter.className="letter behind";setTimeout(()=>{letter.className="letter in";},500+i*20);})
-      currentWordIndex=(currentWordIndex+1)%maxWordIndex}
-      const init=()=>{rotateText()
-      setInterval(rotateText,3000)}
-      setTimeout(init,2000)
-      $(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown()
-      $(".accordion > .accordion-item > .accordion_body").click(function(){$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing")})
-    </script>
-   
     <script>const toggleSwitch=document.querySelector('#darkmode-toggle')
-      const currentTheme=localStorage.getItem('theme')?localStorage.getItem('theme'):null
-      if(currentTheme){document.documentElement.setAttribute('saved-theme',currentTheme);if(currentTheme==='dark'){toggleSwitch.checked=true}}
-      const switchTheme=(e)=>{if(e.target.checked){document.documentElement.setAttribute('saved-theme','dark')
-      localStorage.setItem('theme','dark')}
-      else{document.documentElement.setAttribute('saved-theme','light')
-      localStorage.setItem('theme','light')}}
-      toggleSwitch.addEventListener('change',switchTheme,false)
-    </script>
-    
-    <script src="res/aos.js"></script><script>AOS.init();</script>
-   </body>
+         const currentTheme=localStorage.getItem('theme')?localStorage.getItem('theme'):null
+         if(currentTheme){document.documentElement.setAttribute('saved-theme',currentTheme);if(currentTheme==='dark'){toggleSwitch.checked=true}}
+         const switchTheme=(e)=>{if(e.target.checked){document.documentElement.setAttribute('saved-theme','dark')
+         localStorage.setItem('theme','dark')}
+         else{document.documentElement.setAttribute('saved-theme','light')
+         localStorage.setItem('theme','light')}}
+         toggleSwitch.addEventListener('change',switchTheme,false)
+    </script><script src="resources/aos.js"></script><script>AOS.init();</script>
+   
+  </body>
 </html>
