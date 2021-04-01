@@ -55,7 +55,25 @@
       html {
         scroll-behavior: smooth
       }
-      
+      .jobul {
+         columns: 2;
+         -webkit-columns: 2;
+         -moz-columns: 2;
+      }
+      .jobli::before {
+         content: "▹    ";
+         color: var(--olive);
+         position: absolute;
+         left: 0;
+      }
+
+      .jobli {
+         position: relative;
+         padding-left: 30px;
+         padding-bottom: 16px;
+         font-size: 18px;
+         color: var(--slate);
+      }
       body {
         margin: 0;
         height: 100vh;
@@ -92,7 +110,8 @@
       ul {
         font-family: source sans pro, sans-serif;
         margin-top: 0;
-        padding-left: 1.5em
+        padding-left: 1.5em;
+        list-style: none;
       }
       
       p,
@@ -899,12 +918,23 @@
                    <a href ="https://www.github.com/terryfu33" target = "_blank"><strong><em> github</em></strong></a>, or my
                    <a href ="terryfuResume.pdf" target = "_blank"><strong><em>resume</em></strong></a>.
                 </p>
+                <p>Here are some technologies I have been working with</p>
+                <ul class = "jobul">
+                   <li class = "jobli"><strong>JavaScript</strong></li>
+                   <li class = "jobli"><strong>Python / Flask</strong></li>
+                   <li class = "jobli"><strong>Java / JavaFx</strong></li>
+                   <li class = "jobli"><strong>C / C#</strong></li>
+                   <li class = "jobli"><strong>React / React-Native</strong></li>
+                   <li class = "jobli"><strong>MongoDB</strong></li>
+                   <li class = "jobli"><strong>PostgresSQL</strong></li>
+                </ul>
              </div>
              <!--<img class="lt-shadow me" src="images/me.JPG" alt="Terry Fu" loading="lazy" >-->
           </div>
        </div>
     </div>
 
+    <!--
     <div class="lt-content-column" id="skills">
        <div id="bio" data-aos="fade-right" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100" class="aos-init">
           <h2 class="side-header-container"><span class="hover side-header">/languages</span></h2>
@@ -963,7 +993,7 @@
              </div>
           </div>
        </div>
-    </div>
+    </div>-->
     
     <div class="lt-content-column aos-init" id="experience" data-aos="fade-left" data-aos-duration="800" data-aos-easing="custom" data-aos-offset="100">
        <h2 class="side-header-container"><span class="hover side-header">/experience</span></h2>
